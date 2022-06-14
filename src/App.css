@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: 'bold';
+    src: url(font/SpoqaHanSansNeo-Bold.woff2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'bold';
+    src: url(font/OpenSans-Bold.ttf);
+    unicode-range: U+0041-005A, U+0061-007A;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: 'regular';
+    src: url(font/SpoqaHanSansNeo-Regular.woff2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: 'regular';
+    src: url(font/OpenSans-Regular.ttf);
+    unicode-range: U+0041-005A, U+0061-007A;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+  font-family: 'regular', sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+  color: #333
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: royalblue;
+}
+
+#container {
+  max-width: 600px;
+  padding: 2vw 4vw;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: 'bold', sans-serif;
+}
+
+.section-title {
+  font-family: 'bold', sans-serif;
+  font-size: 2rem;
+}
+
+.section-title:not(:first-child) {
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-family: 'regular', sans-serif;
+  color: dimgray;
+}
+
+p {
+  font-size: 1rem;
+  font-family: 'regular', sans-serif;
+  line-height: 2;
+  letter-spacing: -0.3px;
+  white-space: pre-wrap;
+}
+
+strong {
+  font-size: 1rem;
+  font-family: 'bold', sans-serif;
 }
