@@ -1,35 +1,25 @@
+import logo from './logo.svg';
 import './App.css';
-
-import React, { useState } from "react";
-import { FaStar } from "react-icons/fa";
 
 function App() {
   return (
     <div className="App">
-      {StarRating({})}
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
-}
-
-const Star = ({ selected, onSelect = f => f }) => (
-  <FaStar color={selected ? "red" : "gray"} onClick={onSelect} />
-)
-
-
-const createArray = x => [...Array(x)];
-
-function StarRating({ totalStars = 5 }) {
-  const [selectedStars, setSelectedStars] = useState(0);
-  return (
-    <>
-      {createArray(totalStars).map((n, i) => (
-        <Star key={i} selected={i < selectedStars} onSelect={() => setSelectedStars(i+1)} />
-      ))}
-      <p>
-        {selectedStars} of {totalStars} stars
-      </p>
-    </>
-  )
 }
 
 export default App;
