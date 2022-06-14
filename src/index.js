@@ -1,8 +1,17 @@
-import React from "react";
-import { createRoot, render } from "react-dom";
-import Menu from "./components/Menu";
-import data from "./data/recipes.json"
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-// WebPack 전에는 일단 안되는데 뭘까
-const root = createRoot(document.getElementById("root"));
-root.render(<Menu recipes={data} />);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
