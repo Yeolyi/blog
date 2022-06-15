@@ -33,11 +33,6 @@ a {
   color: royalblue;
 }
 
-#container {
-  max-width: 600px;
-  padding: 2vw 4vw;
-}
-
 h2 {
   font-size: 1.5rem;
   font-family: 'bold', sans-serif;
@@ -69,4 +64,9 @@ p {
 strong {
   font-size: 1rem;
   font-family: 'bold', sans-serif;
+}
+
+#container {
+    width: 600px;
+    padding: 2vw 4vw;
 }

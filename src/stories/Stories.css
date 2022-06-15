@@ -1,0 +1,36 @@
+#story-nav strong {
+    font-family: 'bold', sans-serif;
+    font-size: 1rem;
+    color: dimgray;
+    line-height: 1.5rem;
+    display: block;
+}
+
+#story-nav button {
+    font-family: 'bold', sans-serif;
+    font-size: 1rem;
+    margin-right: 16px;
+    color: royalblue;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#story-nav p {
+    font-family: 'bold', sans-serif;
+    font-size: 1rem;
+    color: dimgray;
+    margin-bottom: 24px;
+}
+
+#story-nav .current-link {
+    display: block;
+    font-family: 'bold', sans-serif;
+    font-size: 4rem;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    line-height: 3rem;
+    color: black;
+}

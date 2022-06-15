@@ -1,0 +1,10 @@
+#til-list {
+    list-style: none;
+}
+
+#til-list h2 {
+    color: black;
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
