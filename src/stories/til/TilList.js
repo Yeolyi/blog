@@ -33,8 +33,8 @@ export default function TilList() {
         <ol id="til-list">
             { posts.map(post => {
                 return (
-                    <Link to={post.data.date}>
-                        <h2 key={post.data.date}>{ post.data.date.toISOString().slice(0,10) }</h2>
+                    <Link to={post.data.date} key={post.data.date.toString()}>
+                        <h2>{ post.data.date.toISOString().slice(0,10) }</h2>
                     </Link>
                 )
             }) }
