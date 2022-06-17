@@ -1,15 +1,13 @@
 import "./Til.css"
 import frontmatter from "frontmatter"
 import { useEffect, useState } from "react";
-import { Link, Route } from "react-router-dom";
-import { Routes } from "react-router-dom";
-import TilContent from "./TilContent";
+import { Link } from "react-router-dom";
 
 export default function TilList() {
     const reqMDs = require.context("../../md/til", true, /\.md$/);
     const markdownFiles = reqMDs.keys().map(path => reqMDs(path));
     const [ posts, setPosts ] = useState([]);
-
+    console.log(markdownFiles);
     useEffect(() => {
         Promise.all(markdownFiles.map(file =>
             fetch(file)
@@ -32,9 +30,10 @@ export default function TilList() {
     return (
         <ol id="til-list">
             { posts.map(post => {
+                let ymdString = post.data.date.toISOString().slice(0,10);
                 return (
-                    <Link to={post.data.date} key={post.data.date.toString()}>
-                        <h2>{ post.data.date.toISOString().slice(0,10) }</h2>
+                    <Link to={ymdString} key={ymdString}>
+                        <h2>{ ymdString }</h2>
                     </Link>
                 )
             }) }
