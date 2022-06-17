@@ -12,6 +12,7 @@ export default function TilContent() {
             const content = response.find(x=>x.data.date.toISOString().slice(0,10) === tilDate);
             setContent(content);
         })
+        window.scrollTo(0, 0);
     }, []);
 
     return (<>
@@ -27,7 +28,7 @@ function Date({date}) {
     const dates = comp.map((x, i) => {
         return <h2 key={i}>{x}</h2>
     })
-    return <div className="til-date">{dates}</div>;
+    return <div id="til-date">{dates}</div>;
 }
 
 function TimeTable(timeTable) {

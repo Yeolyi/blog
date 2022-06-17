@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import { tilPromise } from "./FetchTil";
 
 export default function TilList() {
-    const reqMDs = require.context("../../md/til", true, /\.md$/);
-    const markdownFiles = reqMDs.keys().map(path => reqMDs(path));
     const [ posts, setPosts ] = useState([]);
     useLayoutEffect(() => {
         tilPromise()
@@ -17,7 +15,7 @@ export default function TilList() {
             { posts.map(post => {
                 let ymdString = post.data.date.toISOString().slice(0,10);
                 return (
-                    <Link to={ymdString} key={ymdString}>
+                    <Link to={"til/"+ymdString} key={ymdString}>
                         <h2>{ymdString}</h2>
                     </Link>
                 )

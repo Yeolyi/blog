@@ -17,10 +17,14 @@
 
 /* content */
 
-.til-date {
+#til-date {
     font-size: 2rem;
-    word-spacing: 100vw;
     margin: 2vw 0;
+}
+
+#til-date h2 {
+    font-size: 3rem;
+    line-height: 3rem;
 }
 
 #time-table {

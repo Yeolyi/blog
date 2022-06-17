@@ -1,0 +1,25 @@
+#archieve-list {
+    margin-bottom: 3rem;
+}
+
+.archieve-row {
+    margin-bottom: 1rem;
+}
+
+.archieve-row h2 {
+    font-size: 1rem;
+    color: black;
+}
+
+.archieve-bookmark {
+    margin-bottom: 1rem;
+}
+
+.archieve-bookmark a {
+    display: block;
+    font-family: 'bold';
+}
+
+.archieve-bookmark p {
+    font-size: 0.8rem;
+}

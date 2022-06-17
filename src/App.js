@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/dict" element={<p>dict</p>} />
           <Route path="/stories" element={<Stories />}/>
-          <Route path="/stories/:tilDate" element={<TilContent />} />
+          <Route path="/stories/til/:tilDate" element={<TilContent />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

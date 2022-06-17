@@ -1,10 +1,11 @@
 import "./Stories.css"
 import { useState } from "react"
 import TilRow from "./til/TilList"
+import ArchieveList from "./archieve/ArchieveList"
 
 const categories = [
     { name: "#TIL", description: "Today I Learned; 매일 꾸준히 천천히" },
-    { name: "#Archieve", description: "타인의 지식" },
+    { name: "#Archieve", description: "인터넷에서 보물찾기" },
     { name: "#Writing", description: "기록할만한 나의 지난 경험들" },
 ]
 export default function Stories() {
@@ -18,6 +19,9 @@ export default function Stories() {
     switch (category.name) {
         case "#TIL":
             content = <TilRow/>       
+            break;
+        case "#Archieve":
+            content = <ArchieveList/>       
             break;
         default:
             content = <p>NOPE</p>
