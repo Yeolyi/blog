@@ -1,19 +1,18 @@
 import frontmatter from "frontmatter";
 
-let savedArchieve;
+let savedArchive = undefined;
 
-export let emptyAchieve = {
+export const emptyArchive = {
     content: "",
     data: {
-        date: Date(),
-        time_table: {}
+        title: ""
     }
 }
-export function archievePromise(fileName) {
-    if (savedArchieve !== undefined) {
-        return Promise.resolve(savedArchieve);
+export function archivePromise(fileName) {
+    if (savedArchive !== undefined) {
+        return Promise.resolve(savedArchive);
     }
-    const reqArchieves = require.context("../../md/archieve", true, /\.md$/);
+    const reqArchieves = require.context("../../md/archive", true, /\.md$/);
     const markdownFiles = reqArchieves.keys().map(path => reqArchieves(path));
     return Promise.all(markdownFiles.map(file =>
         fetch(file)
@@ -27,7 +26,7 @@ export function archievePromise(fileName) {
     ))
     .then(response => {
         console.log("Archieve Fetched");
-        savedArchieve = response;
+        savedArchive = response;
         return response;
     })
 } 

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 const categories = [
     { name: "#TIL", description: "Today I Learned; 매일 꾸준히 천천히" , link: "til"},
-    { name: "#Archieve", description: "인터넷에서 보물찾기", link: "archieve" },
+    { name: "#Archive", description: "인터넷에서 보물찾기", link: "archive" },
     { name: "#Writing", description: "기록할만한 나의 지난 경험들", link: "writing" },
 ]
 export default function Stories() {

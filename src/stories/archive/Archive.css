@@ -1,25 +1,30 @@
-#archieve-list {
+#archive-list {
     margin-bottom: 3rem;
 }
 
-.archieve-row {
+.archive-row {
     margin-bottom: 1rem;
 }
 
-.archieve-row h2 {
+.archive-row h2 {
     font-size: 1rem;
     color: black;
 }
 
-.archieve-bookmark {
+.archive-bookmark {
     margin-bottom: 1rem;
 }
 
-.archieve-bookmark a {
+.archive-bookmark a {
     display: block;
     font-family: 'bold';
 }
 
-.archieve-bookmark p {
+.archive-bookmark p {
     font-size: 0.8rem;
+}
+
+#archive-content h2 {
+    white-space: pre-line;
+    margin-bottom: 3rem;
 }
