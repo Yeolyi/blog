@@ -4,7 +4,6 @@ import { tilPromise, emptyTil } from "./FetchTil";
 
 export default function TilContent() {
     const tilDate = useParams().tilDate;
-
     const [ content, setContent ] = useState(emptyTil);
     useLayoutEffect(() => {
         tilPromise()

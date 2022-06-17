@@ -11,6 +11,7 @@ import TilList from './stories/til/TilList';
 
 import NotFound from './notFound/NotFound';
 import ArchieveList from './stories/archieve/ArchieveList';
+import ArchieveContent from './stories/archieve/ArchieveContent';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="archieve" element={<ArchieveList/>}/>
           </Route>
           <Route path="/stories/til/:tilDate" element={<TilContent/>}></Route>
+          <Route path="/stories/archieve/:postName" element={<ArchieveContent/>}></Route>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
