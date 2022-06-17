@@ -15,7 +15,7 @@ export default function TilList() {
             { posts.map(post => {
                 let ymdString = post.data.date.toISOString().slice(0,10);
                 return (
-                    <Link to={"til/"+ymdString} key={ymdString}>
+                    <Link to={ymdString} key={ymdString}>
                         <h2>{ymdString}</h2>
                     </Link>
                 )

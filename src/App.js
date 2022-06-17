@@ -2,13 +2,15 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Header from './header/NavHeader';
-import Container from './container/Container';
 
 import Home from './home/Home';
 import Stories from './stories/Stories';
 import TilContent from './stories/til/TilContent';
 
+import TilList from './stories/til/TilList';
+
 import NotFound from './notFound/NotFound';
+import ArchieveList from './stories/archieve/ArchieveList';
 
 function App() {
   return (
@@ -17,8 +19,11 @@ function App() {
         <Route path="/" element={<Header />}>
           <Route path="/" element={<Home />} />
           <Route path="/dict" element={<p>dict</p>} />
-          <Route path="/stories" element={<Stories />}/>
-          <Route path="/stories/til/:tilDate" element={<TilContent />} />
+          <Route path="/stories" element={<Stories/>}>
+            <Route path="til" element={<TilList/>}/>
+            <Route path="archieve" element={<ArchieveList/>}/>
+          </Route>
+          <Route path="/stories/til/:tilDate" element={<TilContent/>}></Route>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

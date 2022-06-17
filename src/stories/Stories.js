@@ -1,32 +1,27 @@
 import "./Stories.css"
 import { useState } from "react"
-import TilRow from "./til/TilList"
-import ArchieveList from "./archieve/ArchieveList"
+import { Outlet, useParams } from "react-router"
+import { Link } from "react-router-dom"
 
 const categories = [
-    { name: "#TIL", description: "Today I Learned; 매일 꾸준히 천천히" },
-    { name: "#Archieve", description: "인터넷에서 보물찾기" },
-    { name: "#Writing", description: "기록할만한 나의 지난 경험들" },
+    { name: "#TIL", description: "Today I Learned; 매일 꾸준히 천천히" , link: "til"},
+    { name: "#Archieve", description: "인터넷에서 보물찾기", link: "archieve" },
+    { name: "#Writing", description: "기록할만한 나의 지난 경험들", link: "writing" },
 ]
 export default function Stories() {
-    const [category, setCategory] = useState(categories[0])
+    const startCategory = categories.find(x => window.location.href.endsWith(x.link)) ?? categories[0];
+    const [category, setCategory] = useState(startCategory)
     const buttons = categories
-    .map(x => { return <button key={x.name} onClick={() => setCategory(x)}>{x.name}</button> })
+    .map(x => { 
+        return (
+        <Link to={x.link} key={x.link}>
+            <button onClick={() => setCategory(x)}>
+                {x.name}
+            </button> 
+        </Link>
+        )
+    })
     .concat(<p key={category.name+"-current"} className="current-link">{ category.name }</p>)
-
-    let content = <TilRow/>
-
-    switch (category.name) {
-        case "#TIL":
-            content = <TilRow/>       
-            break;
-        case "#Archieve":
-            content = <ArchieveList/>       
-            break;
-        default:
-            content = <p>NOPE</p>
-            break;
-    }
 
     return (
         <>
@@ -35,7 +30,7 @@ export default function Stories() {
             { buttons }
             <p>{ category.description }</p>
         </nav>
-        { content }
+        <Outlet/>
         </>
     )
 }

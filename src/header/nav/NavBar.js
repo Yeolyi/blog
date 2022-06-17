@@ -6,7 +6,7 @@ export default function NavBar() {
         <nav>
             <li>
                 <NavButton link="dict" title="Dict" />
-                <NavButton link="stories" title="Stories" />
+                <NavButton link="stories/til" title="Stories" />
             </li>
         </nav>
     );
