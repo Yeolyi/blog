@@ -67,6 +67,6 @@ strong {
 }
 
 #container {
-    width: 600px;
-    padding: 2vw 4vw;
+  max-width: 600px;
+  padding: 2vw 4vw;
 }
