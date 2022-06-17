@@ -1,12 +1,12 @@
 import { useParams } from "react-router";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { tilPromise, emptyTil } from "./FetchTil";
 
 export default function TilContent() {
     const tilDate = useParams().tilDate;
 
     const [ content, setContent ] = useState(emptyTil);
-    useEffect(() => {
+    useLayoutEffect(() => {
         tilPromise()
         .then(response => {
             const content = response.find(x=>x.data.date.toISOString().slice(0,10) === tilDate);

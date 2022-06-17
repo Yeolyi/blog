@@ -1,5 +1,7 @@
 import frontmatter from "frontmatter";
 
+let savedTil;
+
 export let emptyTil = {
     content: "",
     data: {
@@ -8,6 +10,9 @@ export let emptyTil = {
     }
 }
 export function tilPromise(fileName) {
+    if (savedTil !== undefined) {
+        return Promise.resolve(savedTil);
+    }
     const reqMDs = require.context("../../md/til", true, /\.md$/);
     const markdownFiles = reqMDs.keys().map(path => reqMDs(path));
     return Promise.all(markdownFiles.map(file =>
@@ -25,6 +30,7 @@ export function tilPromise(fileName) {
             return a.data.date < b.data.date ? 1 : -1;
         })
         console.log("TIL Fetched");
+        savedTil = response;
         return response;
     })
 } 
