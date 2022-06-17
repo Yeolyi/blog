@@ -8,3 +8,32 @@
     text-decoration: underline;
     margin-bottom: 10px;
 }
+
+.til-row {
+    list-style: none;
+    list-style-position: inside;
+    margin-bottom: 8px;
+}
+
+/* content */
+
+.til-date {
+    font-size: 2rem;
+    word-spacing: 100vw;
+    margin: 2vw 0;
+}
+
+#time-table {
+    margin-bottom: 24px;
+}
+
+.time-table__element {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.time-table__element h2 {
+    margin-right: 16px;
+    font-size: 1rem;
+}
