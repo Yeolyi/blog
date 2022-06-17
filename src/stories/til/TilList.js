@@ -23,7 +23,7 @@ export default function TilList() {
         ))
         .then(response => {
             response.sort((a, b) => {
-                return ymdToDate(a.data.date) < ymdToDate(b.data.date) ? 1 : -1;
+                return a.data.date < b.data.date ? 1 : -1;
             })
             setPosts(response);
         })
@@ -34,16 +34,10 @@ export default function TilList() {
             { posts.map(post => {
                 return (
                     <Link to={post.data.date}>
-                        <h2 key={post.data.date}>{post.data.date}</h2>
+                        <h2 key={post.data.date}>{ post.data.date.toISOString().slice(0,10) }</h2>
                     </Link>
                 )
             }) }
         </ol>
     );
-}
-
-function ymdToDate(str) {
-    if (typeof str !== "string") { return new Date(); }
-    const [y,m,d] = str.split("-");
-    return new Date(y, m-1, d);
 }
