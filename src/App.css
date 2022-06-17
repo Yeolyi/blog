@@ -71,3 +71,67 @@ strong {
   padding: 2vw 4vw;
   margin-bottom: 50vw;
 }
+
+/* ---------- Markdown ---------- */
+
+#post-content img {
+  display: block;
+  max-width: 100%;
+}
+
+#post-content h2 {
+  margin-bottom: 0.5rem;
+  word-break: keep-all;
+}
+
+#post-content h2:not(:first-child) {
+  margin-top: 2rem;
+}
+
+#post-content ol {
+  list-style-type: decimal;
+}
+
+#post-content ul {
+  list-style-type: square;
+}
+
+#post-content li {
+  line-height: 2;
+  margin-left: 20px;
+}
+
+#post-content blockquote {
+  border-left: 4px solid black;
+  padding-left: 16px;
+}
+
+#post-content p+p,
+#post-content ul+p,
+#post-content ol+p,
+#post-content p+pre,
+#post-content p+blockquote,
+#post-content blockquote+p {
+  margin-top: 16px;
+}
+
+#post-content blockquote+blockquote {
+  margin-top: 24px;
+}
+
+hr {
+  margin: 24px 0;
+  color: dimgray;
+}
+
+#post-content pre+p {
+  margin-top: 24px;
+}
+
+code {
+  margin-top: 24px;
+}
+
+#post-content pre+p>em {
+  color: dimgray;
+}

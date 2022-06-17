@@ -1,6 +1,8 @@
 import { useParams } from "react-router";
 import { useState, useLayoutEffect } from "react";
 import { archievePromise } from "./FetchArchieve";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import "../../App.css"
 
 export default function ArchieveContent() {
     const postName = useParams().postName;
@@ -16,7 +18,9 @@ export default function ArchieveContent() {
     }, []);
 
     return (<>
-        <p>{post.content}</p>
+    <div id="post-content">
+        <ReactMarkdown>{post.content}</ReactMarkdown>
+        </div>
     </>
     )
 }
