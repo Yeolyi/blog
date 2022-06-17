@@ -7,7 +7,6 @@ export default function TilList() {
     const reqMDs = require.context("../../md/til", true, /\.md$/);
     const markdownFiles = reqMDs.keys().map(path => reqMDs(path));
     const [ posts, setPosts ] = useState([]);
-    console.log(markdownFiles);
     useEffect(() => {
         Promise.all(markdownFiles.map(file =>
             fetch(file)
@@ -15,6 +14,7 @@ export default function TilList() {
                     return response.text();
                 })
                 .then(response => {
+                    console.dir(response)
                     return frontmatter(response)
                 })
                 .catch(err => console.error(err))
