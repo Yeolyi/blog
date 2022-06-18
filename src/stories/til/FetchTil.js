@@ -5,7 +5,7 @@ let savedTil;
 export let emptyTil = {
     content: "",
     data: {
-        date: Date(),
+        date: new Date(),
         time_table: {}
     }
 }

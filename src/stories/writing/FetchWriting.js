@@ -2,29 +2,30 @@ import frontmatter from "frontmatter";
 
 let savedWriting = undefined;
 
-export const emptyArchive = {
+export const emptyWriting = {
+    path: "",
     content: "",
     data: {
         title: "",
-        date: Date()
+        date: new Date()
     }
 }
 export function writingPromise() {
     if (savedWriting !== undefined) {
         return Promise.resolve(savedWriting);
     }
-    const reqWriting = require.context("../../md/writing", true, /\.md$/);
-    const markdownFiles = reqWriting.keys().map(path => reqWriting(path));
-    return Promise.all(markdownFiles.map(file =>
-        fetch(file)
+    const reqWriting = require.context("../../../public/writing", true, /\.md$/);
+    const markdownFiles = reqWriting.keys().map(path => ({path, req: reqWriting(path)}));
+    return Promise.all(markdownFiles.map(file => {
+        return fetch(file.req)
             .then(response => {
                 return response.text();
             })
             .then(response => {
-                return frontmatter(response)
+                return {...frontmatter(response), path: file.path};
             })
             .catch(err => console.error(err))
-    ))
+    }))
     .then(response => {
         console.log("Writing Fetched");
         const sorted = response.sort((a, b) => {

@@ -10,3 +10,13 @@
 .post-row {
     list-style: none;
 }
+
+#post-title {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    white-space: pre-line;
+}
+
+#post-header h3 {
+    margin-bottom: 4rem;
+}

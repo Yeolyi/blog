@@ -9,6 +9,7 @@ import TilContent from './stories/til/TilContent';
 
 import NotFound from './notFound/NotFound';
 import ArchieveContent from './stories/archive/ArchiveContent';
+import WritingContent from './stories/writing/WritingContent';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           </Route>
           <Route path="/stories/til/:tilDate" element={<TilContent/>}></Route>
           <Route path="/stories/archive/:postName" element={<ArchieveContent/>}></Route>
+          <Route path="/stories/writing/:postName" element={<WritingContent/>}></Route>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -14,7 +14,7 @@ export default function WritingList() {
     const postList = posts.map(post => {
         return (
         <li className="post-row">
-        <Link to={post.data.title.replace(/ /g, "-")} key={post.data.title}>
+        <Link to={post.data.title.replace(/ /g, "_")} key={post.data.title}>
             <h2>{post.data.title}</h2>
             <h3>{post.data.date.toISOString().slice(0, 10)}</h3>
             </Link>
@@ -24,3 +24,4 @@ export default function WritingList() {
 
     return <ol>{postList}</ol>;
 }
+
