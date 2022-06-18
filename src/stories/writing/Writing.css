@@ -1,0 +1,12 @@
+.post-row:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.post-row h2 {
+    font-family: 'bold';
+    font-size: 1.2rem;
+}
+
+.post-row {
+    list-style: none;
+}

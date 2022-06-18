@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 
 import TilList from "./til/TilList"
 import ArchieveList from "./archive/ArchiveList"
+import WritingList from "./writing/WritingList"
 
 const categories = [
     { name: "#TIL", description: "Today I Learned; 매일 꾸준히 천천히" , link: "/stories/til"},
@@ -41,7 +42,7 @@ export default function Stories() {
             content = <ArchieveList />;
             break;
         default:
-            content = <></>;
+            content = <WritingList />;
             break;
     }
 
