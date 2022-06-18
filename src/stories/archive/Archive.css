@@ -24,7 +24,7 @@
     font-size: 0.8rem;
 }
 
-#archive-content h2 {
+#archive-content>h2 {
     white-space: pre-line;
     margin-bottom: 3rem;
 }
