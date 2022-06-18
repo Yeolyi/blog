@@ -7,10 +7,7 @@ import Home from './home/Home';
 import Stories from './stories/Stories';
 import TilContent from './stories/til/TilContent';
 
-import TilList from './stories/til/TilList';
-
 import NotFound from './notFound/NotFound';
-import ArchieveList from './stories/archive/ArchiveList';
 import ArchieveContent from './stories/archive/ArchiveContent';
 
 function App() {
@@ -20,9 +17,7 @@ function App() {
         <Route path="/" element={<Header />}>
           <Route path="/" element={<Home />} />
           <Route path="/dict" element={<p>dict</p>} />
-          <Route path="/stories" element={<Stories/>}>
-            <Route path="til" element={<TilList/>}/>
-            <Route path="archive" element={<ArchieveList/>}/>
+          <Route path="/stories/:type" element={<Stories/>}>
           </Route>
           <Route path="/stories/til/:tilDate" element={<TilContent/>}></Route>
           <Route path="/stories/archive/:postName" element={<ArchieveContent/>}></Route>
