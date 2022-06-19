@@ -1,6 +1,80 @@
 [
     {
         "title": "컴퓨터과학",
-        "path": "cs"
+        "path": "cs",
+        "content": [
+            {
+                "title": "알고리즘",
+                "path": "algorithm"
+            },
+            {
+                "title": "컴퓨터 구조",
+                "path": "computer-architecture"
+            },
+            {
+                "title": "자료 구조",
+                "path": "data-structure"
+            },
+            {
+                "title": "데이터베이스",
+                "path": "database"
+            },
+            {
+                "title": "네트워크",
+                "path": "network"
+            },
+            {
+                "title": "운영체제",
+                "path": "os"
+            },
+            {
+                "title": "로드맵",
+                "path": "roadmap"
+            }
+        ]
+    },
+    {
+        "title": "iOS",
+        "path": "ios",
+        "content": [
+            {
+                "title": "로드맵",
+                "path": "roadmap"
+            },
+            {
+                "title": "swiftUI",
+                "path": "swiftui"
+            },
+            {
+                "title": "UIKit",
+                "path": "uikit"
+            },
+            {
+                "title": "Xcode에서 group을 사용하는 이유",
+                "path": "why-xcode-use-group"
+            }
+        ]
+    },
+    {
+        "title": "Swift",
+        "path": "swift",
+        "content": [
+            {
+                "title": "로드맵",
+                "path": "roadmap"
+            },
+            {
+                "title": "swiftUI",
+                "path": "swiftui"
+            },
+            {
+                "title": "UIKit",
+                "path": "uikit"
+            },
+            {
+                "title": "Xcode에서 group을 사용하는 이유",
+                "path": "why-xcode-use-group"
+            }
+        ]
     }
 ]

@@ -14,3 +14,12 @@
     color: dimgray;
     margin-bottom: 24px;
 }
+
+#dict-list h2 {
+    margin-bottom: 1rem;
+}
+
+#dict-list h3 {
+    color: dimgray;
+    margin-bottom: 0.5rem;
+}

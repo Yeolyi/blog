@@ -7,6 +7,7 @@ import Home from './home/Home';
 import Stories from './stories/Stories';
 import Dict from './dict/Dict';
 
+import DictContent from './dict/DictContent';
 import TilContent from './stories/til/TilContent';
 
 import NotFound from './notFound/NotFound';
@@ -20,8 +21,8 @@ function App() {
         <Route path="/" element={<Header />}>
           <Route path="/" element={<Home />} />
           <Route path="/dict" element={<Dict/>} />
-          <Route path="/stories/:type" element={<Stories/>}>
-          </Route>
+          <Route path="/stories/:type" element={<Stories/>}></Route>
+          <Route path="/dict/*" element={<DictContent/>}></Route>
           <Route path="/stories/til/:tilDate" element={<TilContent/>}></Route>
           <Route path="/stories/archive/:postName" element={<ArchieveContent/>}></Route>
           <Route path="/stories/writing/:postName" element={<WritingContent/>}></Route>

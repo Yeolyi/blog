@@ -1,6 +1,6 @@
 import "./Writing.css"
 import { useParams } from "react-router";
-import { useState, useLayoutEffect, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 import { emptyWriting, writingPromise } from "./FetchWriting";
