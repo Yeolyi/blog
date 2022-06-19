@@ -14,7 +14,7 @@ export function writingPromise() {
     if (savedWriting !== undefined) {
         return Promise.resolve(savedWriting);
     }
-    const reqWriting = require.context("../../../public/writing", true, /\.md$/);
+    const reqWriting = require.context("../../../public/md/writing", true, /\.md$/);
     const markdownFiles = reqWriting.keys().map(path => ({path, req: reqWriting(path)}));
     return Promise.all(markdownFiles.map(file => {
         return fetch(file.req)

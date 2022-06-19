@@ -26,7 +26,7 @@ export default function WritingContent() {
         <ReactMarkdown 
         transformImageUri={uri => {
             console.log(uri);
-            return "/writing/" + post.path.split("/").reverse()[1] + "/" + uri;
+            return "/md/writing/" + post.path.split("/").reverse()[1] + "/" + uri;
         }}>
             {post.content}
         </ReactMarkdown>

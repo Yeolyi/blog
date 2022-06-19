@@ -13,7 +13,7 @@ export function tilPromise(fileName) {
     if (savedTil !== undefined) {
         return Promise.resolve(savedTil);
     }
-    const reqMDs = require.context("../../md/til", true, /\.md$/);
+    const reqMDs = require.context("../../../public/md/til", true, /\.md$/);
     const markdownFiles = reqMDs.keys().map(path => reqMDs(path));
     return Promise.all(markdownFiles.map(file =>
         fetch(file)

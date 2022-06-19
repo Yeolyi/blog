@@ -12,7 +12,7 @@ export function archivePromise(fileName) {
     if (savedArchive !== undefined) {
         return Promise.resolve(savedArchive);
     }
-    const reqArchieves = require.context("../../md/archive", true, /\.md$/);
+    const reqArchieves = require.context("../../../public/md/archive", true, /\.md$/);
     const markdownFiles = reqArchieves.keys().map(path => reqArchieves(path));
     return Promise.all(markdownFiles.map(file =>
         fetch(file)

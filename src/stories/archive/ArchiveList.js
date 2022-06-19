@@ -2,14 +2,16 @@ import "./Archive.css"
 import { useLayoutEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { archivePromise } from "./FetchArchive";
-import bookmarksJSON from "../../md/archive/bookmark.json"
-
 
 export default function ArchiveList() {
     const [ posts, setPosts ] = useState([]);
+    const [bookmarksJSON, setBookmarks] = useState([]);
     useLayoutEffect(() => {
         archivePromise()
         .then(response => setPosts(response))
+        fetch("/md/archive/bookmark.json")
+        .then(response => response.json())
+        .then(response => setBookmarks(response))
     }, []);
 
     const rows = posts.map((x, i) => {
