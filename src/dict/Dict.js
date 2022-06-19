@@ -8,7 +8,7 @@ export default function Dict() {
     const location = useLocation();
     const path = location.pathname
 
-    let [post, setPost] = useState(emptyDict);
+    let [post, setPost] = useState("");
 
     useEffect(() => {
         fetch("/md/dict/index.md")
@@ -16,7 +16,6 @@ export default function Dict() {
         .then(x => setPost(x))
     }, []);
 
-    console.log(post);
     return <> 
             <nav>
                 <p id="nav-title">Dictionary</p>

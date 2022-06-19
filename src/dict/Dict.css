@@ -23,3 +23,10 @@
     color: dimgray;
     margin-bottom: 0.5rem;
 }
+
+#post-title {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    white-space: pre-line;
+    margin-bottom: 2rem;
+}
