@@ -5,6 +5,8 @@ import Header from './header/NavHeader';
 
 import Home from './home/Home';
 import Stories from './stories/Stories';
+import Dict from './dict/Dict';
+
 import TilContent from './stories/til/TilContent';
 
 import NotFound from './notFound/NotFound';
@@ -17,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Header />}>
           <Route path="/" element={<Home />} />
-          <Route path="/dict" element={<p>dict</p>} />
+          <Route path="/dict" element={<Dict/>} />
           <Route path="/stories/:type" element={<Stories/>}>
           </Route>
           <Route path="/stories/til/:tilDate" element={<TilContent/>}></Route>
