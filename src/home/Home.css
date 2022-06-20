@@ -1,3 +1,18 @@
-#scroll-container {
-    height: 1000px;
+#container {
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+#links {
+    margin-top: 1rem;
+}
+
+#links > a {
+    color: dimgray;
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }

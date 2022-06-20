@@ -1,12 +1,11 @@
 import "./Home.css"
-import { objectMethod } from "@babel/types";
-import { useScroll } from "./useScroll";
 
 export default function Home() {
-    const { scrollY } = useScroll();
-    return (
-        <div id="scroll-container">
-            <p>{scrollY}</p>
+    return <>
+        <img src="me.jpg"></img>
+        <div id="links">
+        <a href="https://www.instagram.com/studyeolyi/">Instagram</a>
+        <a href="https://www.instagram.com/studyeolyi/">Github</a>
         </div>
-    )
+    </>
 }
