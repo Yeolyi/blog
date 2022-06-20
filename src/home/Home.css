@@ -4,10 +4,11 @@
 
 img {
     width: 100%;
+    margin-bottom: 20px;
 }
 
 #links {
-    margin-top: 1rem;
+    margin-top: 20px;
 }
 
 #links > a {
@@ -16,3 +17,4 @@ img {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
+
