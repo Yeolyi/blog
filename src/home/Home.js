@@ -5,7 +5,7 @@ export default function Home() {
         <img src="me.jpg"></img>
         <div id="links">
         <a href="https://www.instagram.com/studyeolyi/">Instagram</a>
-        <a href="https://www.instagram.com/studyeolyi/">Github</a>
+        <a href="https://github.com/Yeolyi">Github</a>
         </div>
     </>
 }
