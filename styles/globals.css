@@ -14,3 +14,77 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* 커스텀 */
+
+@font-face {
+  font-family: 'bold';
+  src: url(../fonts/SpoqaHanSansNeo-Bold.woff2);
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url(../fonts/OpenSans-Bold.ttf);
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: 'regular';
+  src: url(../fonts/SpoqaHanSansNeo-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'regular';
+  src: url(../fonts/OpenSans-Regular.ttf);
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+* {
+font-family: 'regular', sans-serif;
+padding: 0;
+margin: 0;
+-webkit-text-size-adjust: 100%;
+color: #333
+}
+
+body {
+  background-color: white;
+}
+
+a {
+text-decoration: none;
+color: royalblue;
+}
+
+h2 {
+font-size: 1.5rem;
+font-family: 'bold', sans-serif;
+}
+
+.section-title {
+font-family: 'bold', sans-serif;
+font-size: 2rem;
+}
+
+.section-title:not(:first-child) {
+margin-top: 30px;
+}
+
+h3 {
+font-size: 1rem;
+font-family: 'regular', sans-serif;
+color: dimgray;
+}
+
+p {
+font-size: 1rem;
+font-family: 'regular', sans-serif;
+line-height: 2;
+letter-spacing: -0.3px;
+white-space: pre-wrap;
+}
+
+strong {
+font-size: 1rem;
+font-family: 'bold', sans-serif;
+}
