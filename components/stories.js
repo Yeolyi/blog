@@ -17,7 +17,7 @@ export default function Stories({type, children}) {
     const buttons = categories
     .map(x => { 
         return (
-        <Link href={x.link}>
+        <Link href={x.link} key={x.link}>
             <button onClick={() => setCategory(x)}>
                 {x.name}
             </button> 
