@@ -48,18 +48,14 @@
     margin-top: 24px;
 }
 
-/* hr {
+#postContent hr {
     margin: 24px 0;
     color: dimgray;
-} */
+}
 
 #postContent pre+p {
     margin-top: 24px;
 }
-
-/* code {
-    margin-top: 24px;
-} */
 
 #postContent pre+p>em {
     color: dimgray;

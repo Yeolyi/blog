@@ -33,6 +33,8 @@ export default function PostContent({ path, children }) {
                                 style={codeTheme}
                                 language={match[1]}
                                 PreTag="div"
+                                wrapLongLines={true}
+                                showInlineLineNumbers={true}
                                 {...props}
                             >{String(children).replace(/\n$/, '')}</SyntaxHighlighter>
                         ) : (
