@@ -17,7 +17,6 @@ export default function PostContent({ path, children }) {
                         if (x.startsWith("http")) {
                             return x
                         }
-                        console.log(path);
                         return "/dict/"+path.join("/")+"/"+x;
                     } else {
                         return x;

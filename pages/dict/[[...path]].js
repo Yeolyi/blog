@@ -1,7 +1,6 @@
 import { getAllDictIDs, getPostData } from "../../lib/posts";
 import PostContent from "../../components/postContent";
 import styles from "./[[...path]].module.css"
-import { useRouter } from "next/router";
 
 export default function Dict({ postData, path }) {
     return <>
@@ -23,7 +22,7 @@ export async function getStaticProps({ params }) {
     return {
         props: {
             postData,
-            path: params.path ?? null
+            path: params.path ?? []
         }
     }
 }
