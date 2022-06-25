@@ -6,13 +6,14 @@ export default function PostContent({ children }) {
     return (
         <div id="postContent">
             <ReactMarkdown
-                children={children}
                 components={{
                     img: image => {
                         return <Image src={image.src} width="500" height="500" />
                     }
                 }}
-            />
+            >
+                { children }
+            </ReactMarkdown>
         </div>
     )
 }
