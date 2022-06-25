@@ -4,7 +4,7 @@ import styles from "./writing.module.css"
 import Link from "next/link";
 
 export default function Writing({ postData }) {
-    const postList = postData.map(x => <PostRow postData={x} />)
+    const postList = postData.map(x => <PostRow postData={x} key={x.id}/>)
 
     return <Stories type="writing">
         <ol>{postList}</ol>
@@ -14,7 +14,7 @@ export default function Writing({ postData }) {
 function PostRow({postData}) {
     return (
         <li className={styles.postRow}>
-            <Link href={`/stories/writing/${postData.id}`} key={postData.id}>
+            <Link href={`/stories/writing/${postData.id}`}>
                 <a>
                     <h2>{postData.title}</h2>
                     <h3>{postData.date}</h3>
