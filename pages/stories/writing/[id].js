@@ -14,6 +14,7 @@ export default function WritingContent({ postData }) {
 
 export function getStaticPaths() {
     const paths = getAllPostIds("writing");
+    console.log(paths);
     return {
         paths,
         fallback: false

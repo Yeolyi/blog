@@ -1,3 +1,7 @@
+---
+title: 목차
+---
+
 ## 컴퓨터 과학
 ### [로드맵](cs/roadmap)
 ### [알고리즘](cs/algorithm)

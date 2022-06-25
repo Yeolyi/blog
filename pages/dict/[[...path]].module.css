@@ -1,0 +1,32 @@
+#navTitle {
+    display: block;
+    font-family: 'bold', sans-serif;
+    font-size: 4rem;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    line-height: 3rem;
+    color: black;
+}
+
+#navDescription {
+    font-family: 'bold', sans-serif;
+    font-size: 1rem;
+    color: dimgray;
+    margin-bottom: 24px;
+}
+
+#dictList h2 {
+    margin-bottom: 1rem;
+}
+
+#dictList h3 {
+    color: dimgray;
+    margin-bottom: 0.5rem;
+}
+
+#postTitle {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    white-space: pre-line;
+    margin-bottom: 2rem;
+}
