@@ -3,16 +3,7 @@ import { getSortedPostsData } from "../../lib/posts";
 import Stories from "../../components/stories";
 import Link from "next/link";
 
-export async function getStaticProps() {
-    const allPostsData = getSortedPostsData("til");
-    return {
-        props: {
-            allPostsData,
-        },
-    };
-}
-
-export default function TilList({ allPostsData }) {
+export default function TilList({ allPostsData, bookmarks }) {
     return (
         <Stories type="til">
             <ol id={styles.tilList}>
@@ -26,4 +17,13 @@ export default function TilList({ allPostsData }) {
             </ol>
         </Stories>
     );
+}
+
+export async function getStaticProps() {
+    const allPostsData = getSortedPostsData("til");
+    return {
+        props: {
+            allPostsData
+        },
+    };
 }

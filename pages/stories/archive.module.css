@@ -1,0 +1,25 @@
+#archiveList {
+    margin-bottom: 3rem;
+}
+
+.archiveRow {
+    margin-bottom: 1rem;
+}
+
+.archiveRow h2 {
+    font-size: 1rem;
+    color: black;
+}
+
+.archiveBookmark {
+    margin-bottom: 1rem;
+}
+
+.archiveBookmark a {
+    display: block;
+    font-family: 'bold';
+}
+
+.archiveBookmark p {
+    font-size: 0.8rem;
+}
