@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 export default function NavBar() {
     return <>
         <header id={styles.navBar}>
-            <Link href="/"><h2>개발자 이성열</h2></Link>
+            <Link href="/"><h2>YeolYi</h2></Link>
             <CategoryList/>
         </header>
     </>

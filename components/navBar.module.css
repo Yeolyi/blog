@@ -1,7 +1,7 @@
 #navBar {
     position: sticky;
     top: 0;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     align-items: center;
     background-color: rgba(250, 250, 250, 0.95);
@@ -10,7 +10,7 @@
 }
 
 #navBar h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -32,18 +32,14 @@
 @media screen and (max-width: 500px) {
     #navBar {
         display: block;
+        text-align: center;
     }
 
     #navBar h2 {
-        margin: 10px 0;
+        margin-bottom: 10px;
     }
 
     #categoryList {
-        margin-bottom: 10px;
-    }
-    
-    .categoryButton {
-        margin-left: 0;
-        text-align: left;
+        margin: auto;
     }
 }
