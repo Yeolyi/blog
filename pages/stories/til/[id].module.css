@@ -1,0 +1,24 @@
+#tilDate {
+    font-size: 2rem;
+    margin: 2vw 0;
+}
+
+#tilDate h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+#timeTable {
+    margin-bottom: 24px;
+}
+
+.timeTableElement {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.timeTableElement h2 {
+    margin-right: 16px;
+    font-size: 1rem;
+}

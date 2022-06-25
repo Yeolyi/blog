@@ -24,7 +24,7 @@ export default function Stories({type, children}) {
         </Link>
         )
     })
-    .concat(<div id={styles.currentLink}>{ category.name }</div>)
+    .concat(<div id={styles.currentLink} key={"currentLink"}>{ category.name }</div>)
 
     return (
         <>

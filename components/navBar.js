@@ -14,8 +14,8 @@ function NavButtons() {
     return (
         <nav id={styles.navButtons}>
             <li>
-                <NavButton link="dict" title="Dict" />
-                <NavButton link="stories/til" title="Stories" />
+                <NavButton link="/dict" title="Dict" />
+                <NavButton link="/stories/til" title="Stories" />
             </li>
         </nav>
     );
