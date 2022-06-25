@@ -8,17 +8,19 @@ export default function Archive({ allPostsData, bookmarkData }) {
     const bookmarks = bookmarkData.map( x => <Bookmark bookmark={x} key={x.id}/> )
 
     return <Stories type="archive">
-        <div id={styles.archiveList}>
+        <ol id={styles.archiveList}>
             {postRows}
-        </div>
-        {bookmarks}
+        </ol>
+        <ol>
+            {bookmarks}
+        </ol>
     </Stories>
 }
 
 function PostRow({postData}) {
     return <div className={ styles.archiveRow }>
             {/* 이게 최선? */}
-            <Link href={`archive/${postData.id}`}>  
+            <Link href={`/stories/archive/${postData.id}`}>  
                 <a><h2>{postData.title}</h2></a>
             </Link>
         </div>;

@@ -1,10 +1,11 @@
 import { getAllPostIds, getPostData } from "../../../lib/posts"
 import styles from "./[id].module.css"
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 export default function ArchiveContent({ postData }) {
     return <div id={styles.archiveContent}>
         <h2>{postData.title.replace(/ /g, "\n")}</h2>
-        <div id="postContent" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <ReactMarkdown>{postData.content}</ReactMarkdown>
     </div>
 }
 
