@@ -4,8 +4,8 @@ import styles from "./archive.module.css"
 import Link from "next/link";
 
 export default function Archive({ allPostsData, bookmarkData }) {
-    const postRows = allPostsData.map(x => <PostRow postData={x} /> );
-    const bookmarks = bookmarkData.map( x => <Bookmark bookmark={x} /> )
+    const postRows = allPostsData.map(x => <PostRow postData={x} key={x.id}/> );
+    const bookmarks = bookmarkData.map( x => <Bookmark bookmark={x} key={x.id}/> )
 
     return <Stories type="archive">
         <div id={styles.archiveList}>
@@ -16,7 +16,7 @@ export default function Archive({ allPostsData, bookmarkData }) {
 }
 
 function PostRow({postData}) {
-    return <div className={ styles.archiveRow } key={postData.id}>
+    return <div className={ styles.archiveRow }>
             {/* 이게 최선? */}
             <Link href={`archive/${postData.id}`}>  
                 <a><h2>{postData.title}</h2></a>
@@ -25,7 +25,7 @@ function PostRow({postData}) {
 }
 
 function Bookmark({bookmark}) {
-    return <div className={styles.archiveBookmark} key={bookmark.title}>
+    return <div className={styles.archiveBookmark}>
     <Link href={bookmark.link}><a>{bookmark.title}</a></Link>
     {"description" in bookmark ? <p>{bookmark.description}</p> : null}
     </div>
