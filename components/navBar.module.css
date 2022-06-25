@@ -1,8 +1,7 @@
 #navBar {
     position: sticky;
     top: 0;
-    height: 50px;
-    padding: 0 10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     background-color: rgba(250, 250, 250, 0.95);
@@ -16,7 +15,6 @@
 }
 
 #categoryList {
-    text-align: right;
     list-style: none;
     margin-left: auto;
 }
@@ -29,4 +27,23 @@
     text-align: center;
     font-family: 'code', monospace;
     white-space: pre; /* 따옴표가 추가될 때 버튼 이동을 막는 공백을 제거하지 않음 */
+}
+
+@media screen and (max-width: 500px) {
+    #navBar {
+        display: block;
+    }
+
+    #navBar h2 {
+        margin: 10px 0;
+    }
+
+    #categoryList {
+        margin-bottom: 10px;
+    }
+    
+    .categoryButton {
+        margin-left: 0;
+        text-align: left;
+    }
 }
