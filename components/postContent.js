@@ -4,6 +4,7 @@ import styles from "./postContent.module.css"
 
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import * as style from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import codeTheme from "./codeTheme"
 import javascript from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
 import swift from 'react-syntax-highlighter/dist/cjs/languages/prism/swift'
 import java from 'react-syntax-highlighter/dist/cjs/languages/prism/java'
@@ -29,7 +30,7 @@ export default function PostContent({ path, children }) {
                         const match = /language-(\w+)/.exec(className || '')
                         return !inline && match ? (
                             <SyntaxHighlighter
-                                style={style.prism}
+                                style={codeTheme}
                                 language={match[1]}
                                 PreTag="div"
                                 {...props}
