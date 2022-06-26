@@ -27,7 +27,7 @@ function CategoryList() {
                     return (
                         <Link href={x.link} key={x.link}>
                             <li className={styles.categoryButton}>
-                                {router.pathname.includes(x.link) ? `"${x.name}"` : ` ${x.name} `}
+                                {router.pathname.includes(x.link) ? `[${x.name}]` : ` ${x.name} `}
                             </li>
                         </Link>
                     )

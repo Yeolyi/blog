@@ -4,17 +4,23 @@
 }
 
 #postContent h2 {
-    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 2rem;
     word-break: keep-all;
-}
-
-#postContent h3 {
-    margin-bottom: 0.25rem;
-    word-break: keep-all;
+    margin-bottom: 2rem;
 }
 
 #postContent h2:not(:first-child) {
+    margin-top: 6rem;
+}
+
+#postContent h3 {
+    color: #333;
+    font-family: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     margin-top: 2rem;
+    word-break: keep-all;
 }
 
 #postContent ol {
@@ -31,8 +37,10 @@
 }
 
 #postContent blockquote {
-    border-left: 4px solid black;
-    padding-left: 16px;
+    display: inline-block;
+    background: #eee;
+    border-left: 4px solid #ccc;
+    padding: 4px 16px;
 }
 
 #postContent p+p,

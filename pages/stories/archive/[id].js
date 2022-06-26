@@ -1,11 +1,11 @@
 import { getAllPostIds, getPostData } from "../../../lib/posts"
 import styles from "./[id].module.css"
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import PostContent from "../../../components/postContent"
 
 export default function ArchiveContent({ postData }) {
     return <div id={styles.archiveContent}>
         <h2>{postData.title.replace(/ /g, "\n")}</h2>
-        <ReactMarkdown>{postData.content}</ReactMarkdown>
+        <PostContent>{postData.content}</PostContent>
     </div>
 }
 

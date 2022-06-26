@@ -1,5 +1,5 @@
 ---
-title: 목차
+title: Wiki
 ---
 
 ## 컴퓨터 과학

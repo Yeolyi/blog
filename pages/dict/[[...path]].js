@@ -4,7 +4,7 @@ import styles from "./[[...path]].module.css"
 
 export default function Dict({ postData, path }) {
     return <>
-        <h2 id={styles.postTitle}>{postData.title.replace(/ /g, "\n")}</h2>
+        <h2 id={styles.postTitle}>{postData.title}</h2>
         <PostContent path={path}>{postData.content}</PostContent>
     </>
 }
