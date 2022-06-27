@@ -218,15 +218,173 @@ Value hypothesis와 growth hypothesis는 모든 새로운 스타트업이 직면
 
 Leaps of faith는 종종 유비(analogy)의 형태를 띄는데, 명제가 leaps of faith임을 불명료하게 하여 사업이 덜 위험해보이게 해버린다. 
 
+아이팟의 analog는 워크맨. 사람들이 공공장소에서 이어폰으로 음악을 들을까? 잡스는 analog로서의 워크맨을 통해 질문에 대한 답을 알고 있었다. 반대로 antilog는??
 
+> The antilog had to lead him to address his business in a particular way,,,?
+
+> The successful entrepreneurs had the foresight, the ability, and the tools to discover which parts of their plans were working briliently and which were misguided, and adapt their strategies accordingly. 
+
+스타트업이 왜 성장하고 있는지(성장하고있는 것처럼 보이는지)를 알아야하며, 성장하고 있는척하는 success theater(value-destroyinh kinds of growth)를 지양해야한다. 챕터7에서 배울 innovation accounting이 이와 연관. 
+
+**Genchi Gembutsu**
+
+> You cannot be sure you really understand any part of any business problem unless you go an see for yourself firsthand. It is unacceptable to take anything for granted or to rely on the reports of others. 
+
+Sustaining innovation을 진행중인 회사는 어떤 소비자에게 genchi gembutsu를 사용해야하는지 알며 이들의 필요를 알아낼 수 있지만, 스타트업이 잠재 고객과 접촉하는 것은 단지 어떤 추측이 가장 테스트가 급박한지 알려줄 뿐이다. 
+
+**빌딩에서 벗어나기**
+
+지표도 사람이자 개개인이다. 스타트업은 잠재고객을 광범위하게 조사하여 이해해야한다. 이러한 조사는 확실한 답을 얻기 위해서가 아닌 잠재 고객에 대한 이해와 그들이 어떤 문제를 가지고 있는지를 기본적으로 알기 위해서이다. 
+
+여기서 customer archetype을 도출해낼 수 있다. 
+
+> A new breed of designers is developing brand-new techniques under the banner of Lean User Experience. They recognize that the customer archetype is a hypothesis, not a fact. 
+
+**Analysis Paralysis**
+
+전략 검증 없이 스스로를 속이면서 만들거나, 끝없이 계획을 수정하면서 실제로 검증할 시기를 미루거나.. 
+
+분석이 많아도 문제고, 없어도 문제라면 언제 분석을 멈추고 개발을 시작할까? -> 챕터6. MVP
 
 ### 6. Test
 
+> A minimum viable product(MVP) helps entrepreneurs start the process of learning as quickly as possible. 
+
+MVP의 목표는 단순히 제품 디자인이나 기술적인 질문에 답하는 것이 아닌, 근본적인 비즈니스 가설을 테스트해보는 것이다. 
+
+**Why First Products aren’t Meant to be Perfect**
+
+새로운 제품이 mass market에서 성공적으로 팔리기 전에 얼리어답터에게 우선 팔려야한다. 이들이 타겟일 때 과하게 polish하는 것은 낭비이다. 
+
+MVP가 어느정도 복잡해야할지 정하는 것은 formulaically하게 할 수 없다. 
+
+제품을 만들고 소비자의 반응을 통해 비즈니스 모델에 대한 질문을 답하는 것은 큰 낭비로 이어질 수 있다. 
+
+> The lesson of the MVP is that any additional work beyond what was required to start learning is waste, no matter how important it might have seemed at the time. 
+
+**The Video MVP**
+
+> The MVP validated Drew’s leap-of-faith assumption that customers wanted the product he was developing not because they said so in a focus group or because of a hopeful analogy to another business, but because they actually signed up.
+
+**The Concierge MVP**
+
+한 명의 고객으로 시작한다. 사업의 부품들을 하나하나씩 개선해나간다. 고전적인 시선으로는 매우 비효율적이지만, 매주 제품을 성공적으로 만들기 위한 방법을 학습해나갈 수 있다. 
+
+> Their product devlopment team was always focus on scaling somtthing that was working rather than trying to invent something that might work in the future. 
+
+> In a concierge MVP, this personalized service is not the product but a learning activity designed to test the leap-of-faith assumptions in the company’s growth model. 
+
+보통 concierge MVP를 통해 기존 회사의 성장 모델을 폐기하고 다른 접근법이 필요함이 확실해진다. 
+
+**Pay No Attention to the Eight People Behind the Curtain**
+
+Build a series of functioning products and test them. 
+
+> In this case, the video was the minimum viable product. The MVP validated Drew’s leap-of-faith assumption that customers wanted the product he was developing not because they said so in a focus group or because of a hopeful analogy to another business, but because they actually signed up.
+
+여덟사람 -> 위 제품이 실제로는 한동안 사람이 운영하고 있었음. 
+
+**The Role of Quality and Design in an MVP**
+
+전문가는 질적인 제품을 만들고 싶어하며 이는 그들의 자부심이다. 
+
+> If we do not know who the customer is, we do not know what quality is.
+
+> Customers don’t care how much time something takes to build. They care only if is serves their needs. 
+
+**Speed Bumps in Building an MVP**
+
+> The reason to build a new team to pursue an idea is that you believe you can accelerate through the Build-Measure-Learn feedback loop faster than anyone else can.
+
+**From the MVP to Innovation Accounting**
+
+MVP가 실패했다면 포기하지 않고 pivot을 한다. MVP는 learning의 시작일 뿐. 
+
+> Because the plans and projections we make are full of uncertainty, how can we claim success when we inevitably fail to deliver what we promised?
+
+> We all need a disciplined, systematic approach to figuring out if we’re making progress and discovering if we’re actually achieving validated learning. I call this system innovation accounting, an alternative to traditional accounting designed specifically for startups. It is the subject of Chapter 7.
+
 ### 7. Measure
+
+스타트업의 일은 1) 현재 위치를 엄격히 측정하여 진실을 바라보며 2) 이상에 가까워지기 위한 방법을 배우기 위한 실험을 구상하는 것이다. 
+
+생각없이 persevere하면 망한다. 
+
+**Accounting같이 재미없는 것이 변화를 일으키는 이유**
+
+제품이 좋아지고 있냐는 질문에는 쉽게 대답할 수 있지만, 그것을 어떻게 아는지는 대답하지 못한다. 
+
+변화와 결과의 인과관계를 명확히 하고, 변화로부터 올바른 것을 배우고 있는지를  대답하기 위해 innovation accounting이 필요하다. 
+
+Leap-of-faith 가정을 quantitative financial model로 바꿈으로서 시작한다. 이는 회사의 성장 모델에 따라 달라진다. 
+
+**Three Learning Milestones**
+
+1. 회사의 현위치(baseline)를 알기 위해 MVP로부터 실 데이터를 얻어낸다. 
+2. base-line에서 ideal쪽으로 tune the engine
+3. pivot or persevere
+
+가장 리스크가 큰 가정을 먼저 테스트하라. 
+
+**Optimization vs Learning**
+
+> If you are building the wrong thing, optimizing the product or its marketing will not yield significant results.
+
+> Energy invested in success theater is energy that could have been used to help build a sustainable business
+
+**Vanity metrics**
+
+> ‘Innovation accounting will not work if a startup is being misled by these kinds of vanity metrics: gross number of customers and so on. The alternative is the kind of metrics we use to judge our business and our learning milestones, what I call actionable metrics.’
+
+> ‘Although working with split tests seems to be more difficult because it requires extra accounting and metrics to keep track of each variation, it almost always saves tremendous amounts of time in the long run by eliminating work that doesn’t matter to customers.’
+
+코호트와 split-test...
+
+칸반: 각 상태별 스토리의 최대 개수를 설정하기에 마지막 단계인 validate에 있는 스토리들을 비우기를 강제한다. Validate를 위해서는 명확한 가설이 있어야하므로 가설이 반드시 필요하게 된다. 
+
+**The Value of the Three A's**
+
+Actionable-결과를 재현하기 위해 정확히 어떤 활동이 필요한지가 명확해야한다. 인과관계가 명확하다면 행동으로부터 배우는 것이 쉬워진다. 
+Accessible-리포트를 최대한 쉽게 만들어 이해하기 쉽게 해야한다. people-based report(website hit -> person visiting the website)를 만들어야한다. 모두가 리포트에 접근할 수 있게 하라. 
+Auditable-데이터가 신용성 있어 잘못을 다른곳으로 돌리지 않도록?해야한다. 지표가 실제 사람들을 기반으로 함을 알고, 리포트를 만드는 프로세스가 복잡하면 안된다. 
+
+> ‘One decision stands out above all others as the most difficult, the most time-consuming, and the biggest source of waste for most startups. We all must face this fundamental test: deciding when to pivot and when to persevere.’
+
+위가 다음 챕터 내용.
 
 ### 8. Pivot (or Persevere)
 
+기존 전략 가설이 먹힌다고 할정도로 진전이 있는가 아니면 변화(pivot)를 주어야하는가. 
+
+> There is no bigger destoryer of creative potential than the misguided decision to persevere.
+
+> The heart of the scientific method is the realization that although human judgment may be faulty, we can improve our judgement by subjecting our theories to repeated testing. 
+
+**Innovational Accounting은 빠른 pivot을 이끈다**
+
+> Pivot은 지금까지 배운것에 한 발을 고정시키고, 더 큰 validated learning을 위해 전략에 근본적인 변화를 주어 다른 방향으로 나아가는 것이다.
+
+MVP의 개발은 pivot을 할수록 빨라지는데, 이는 고객과 시장, 전략등 필수적인 것들에 대해 배우고 있기 때문이다. 
+
+**스타트업의 runway는 남은 가능한 pivot의 횟수이다**
+
+**Pivot은 용기를 필요로 한다**
+
+Vanity metircs는 창업가가 거짓된 결론과 자신만의 세계에 갇히게 하며, 창업가가 불분명한 가설을 가지고 있다면 완전한 실패란 불가능하며, 실패를 인정하는 것은 사기를 매우 저하시킨다. 
+
+> But to us it just meant we needed to get our product and our wision out into the market broadly in order to get feedback and to begin iteration. We humbly test our theories and our approach to see what the market thinks. And continue to innovate in the directions we think will create meaning in the world. 
+
+**The pivot of Persevere Meeting**
+
+주기적으로 미팅을 가져야한다. 
+
+피봇은 기존의 것을 폐기하는 개념이 아닌 만들어진것을 repurposing하고 더 긍정적인 방향을 찾기 위해 배운 것을 활용하는 것이다. 
+
+Failure To Pivot ~ 읽기
+
 ## Part Three. ACCELERATE
+
+
 
 ### 9. Batch
 
@@ -238,4 +396,31 @@ Leaps of faith는 종종 유비(analogy)의 형태를 띄는데, 명제가 leaps
 
 ### 13. Epilogue: Waste Not
 
-### 14. Join the Movement
+> In 1911 Taylor(Fredrick Winslow Taylor) wrote: "In the past, the man ahs been first; in the future, the system must be first"
+
+일은  과학적으로 탐구될 수 있으며 엄격한 실험적 접근방법으로 개선될 수 있다. 
+
+하지만 20세기와는 다르게 이제 우리의 생산능력은 무엇을 생산할지 아는 능력을 훨씬 능가한다. 
+
+> Our future prosperity depends on the quality of our collective imaginations.
+
+> We can see our forests vanishing, our water-powers going to waste, our soil being carried by floods into the sea; and the end of our coal and our iron is in sight. But our larger wastes of human effort, which go on every day through such of our acts as are blundering, ill-directed, or inefficient … are less visible, less tangible, and are but vaguely appreciated.
+We can see and feel the waste of material things. Awkward, inefficient, or ill-directed movements of men, however, leave nothing visible or tangible behind them. Their appreciation calls for an act of memory, an effort of the imagination. And for this reason, even though our daily loss from this source is greater than from our waste of material things, the one has stirred us deeply, while the other has moved us but little.
+
+> We believe that most forms of waste in innovation are preventable once their causes are understood. 
+
+**Organizational Superpowers**
+
+제품에 대한 인사이트에 있어서 개인의 지성보다는 어떤일이 일어날지 예측하고 대안을 제시할 수 있는 시스템이 더 중요하다. 
+
+하지만 그렇다고 능력있는 개인이 중요하지 않은 것은 아니다. 
+
+> The first object of any good system must be that of developing first-class men; and under systematic management the best man rises to the top more certainly and more rapidly than ever before.
+
+개인을 등한시한다면 사업은 유연성을 잃고, 절차가 점점 강조되게 된다. 
+
+많은 혁신 팀들이 success theater에 머무르며, 데이터를 선택적으로 취사한다. 올바르지 않은 지표를 사용하고, 배움이라는 핑계로 실패를 정당화시킬 때마다 유사 과학을 사용하는 것이다. 
+
+> Science came to stand for the victory of routine work over creative work, mechanization over humanity, and plans over agility. Later movements had to be spawned to correct those deficiencies.
+
+Taylor의 때와 지금이 다른 것처럼, 린 스타트업의 어떤것이 편견임이 밝혀지고 어떻게 발전할까?
