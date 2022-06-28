@@ -5,16 +5,16 @@ import { useRouter } from 'next/router'
 export default function NavBar() {
     return <>
         <header id={styles.navBar}>
-            <Link href="/"><h2>YeolYi</h2></Link>
+            <Link href="/"><h2 id={styles.logo}>YeolYi</h2></Link>
             <CategoryList/>
         </header>
     </>
 }
 
 const categories = [
-    { name: "TIL", description: "Today I Learned; 매일 꾸준히 천천히", link: "/stories/til" },
-    { name: "Archive", description: "인터넷에서 보물찾기", link: "/stories/archive" },
-    { name: "Writing", description: "기록할만한 나의 지난 경험들", link: "/stories/writing" },
+    { name: "TIL", link: "/stories/til" },
+    { name: "Archive", link: "/stories/archive" },
+    { name: "Writing", link: "/stories/writing" },
     { name: "Dict", link: "/dict" },
 ];
 

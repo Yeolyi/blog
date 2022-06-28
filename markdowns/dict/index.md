@@ -1,6 +1,8 @@
 ---
-title: Dict
+title: 사전
 ---
+
+
 
 ### 컴퓨터 과학
 [로드맵](cs/roadmap)
