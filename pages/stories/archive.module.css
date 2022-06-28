@@ -6,9 +6,10 @@
     margin-bottom: 1rem;
 }
 
-.archiveRow h2 {
+.archiveRow a {
     font-size: 1rem;
     color: black;
+    text-decoration: none;
 }
 
 .archiveBookmark {
@@ -17,7 +18,8 @@
 
 .archiveBookmark a {
     display: block;
-    font-family: 'bold';
+    text-decoration: none;
+    color: royalblue 
 }
 
 .archiveBookmark p {

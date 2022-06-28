@@ -1,14 +1,22 @@
 .postRow:not(:last-child) {
-    margin-bottom: 1rem;
-}
-
-.postRow h2 {
-    font-family: 'bold';
-    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .postRow {
     list-style: none;
+}
+
+.postRow a {
+    text-decoration: none; /* 왜??? */
+}
+
+.postRow h2 {
+    font-size: 1.2rem;
+}
+
+.postRow h3 {
+    font-size: 0.8rem;
+    color: dimgray;
 }
 
 #postTitle {

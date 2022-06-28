@@ -2,16 +2,12 @@
     list-style: none;
 }
 
-#tilList a {
-    color: black;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    display: block;
-    font-family: 'bold', sans-serif;
-}
-
 .tilRow {
     list-style: none;
     list-style-position: inside;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    display: block;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
 }

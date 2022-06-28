@@ -10,7 +10,7 @@ export default function TilList({ allPostsData, bookmarks }) {
                 {allPostsData.map(post => {
                     return (
                         <Link href={"til/" + post.id} key={post.id}>
-                            <a>{post.date}</a>
+                            <a className={styles.tilRow}>{post.date}</a>
                         </Link>
                     )
                 })}

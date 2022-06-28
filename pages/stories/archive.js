@@ -21,7 +21,7 @@ function PostRow({postData}) {
     return <div className={ styles.archiveRow }>
             {/* 이게 최선? */}
             <Link href={`/stories/archive/${postData.id}`}>  
-                <a><h2>{postData.title}</h2></a>
+                <a>{postData.title}</a>
             </Link>
         </div>;
 }

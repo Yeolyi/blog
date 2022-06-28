@@ -1,3 +1,22 @@
+#postContent p {
+    font-size: 1rem;
+    font-family: 'regular', sans-serif;
+    line-height: 1.8;
+    white-space: pre-wrap;
+}
+
+#postContent a {
+    font-size: 1rem;
+    font-family: 'regular', sans-serif;
+    text-decoration: none;
+    color: royalblue;
+}
+
+#postContent strong {
+    font-size: 1rem;
+    font-family: 'bold', sans-serif;
+}
+
 #postContent img {
     display: block;
     max-width: 100%;
@@ -37,10 +56,11 @@
 }
 
 #postContent blockquote {
-    display: inline-block;
+    display: block;
     background: #eee;
     border-left: 4px solid #ccc;
     padding: 4px 16px;
+    margin: 0;
 }
 
 #postContent p+p,
@@ -67,4 +87,9 @@
 
 #postContent pre+p>em {
     color: dimgray;
+}
+
+#postContent code * {
+    font-family: 'code';
+    color: #D4D5C1
 }
