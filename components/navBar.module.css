@@ -1,5 +1,6 @@
 #logo {
     font-family: 'bold';
+    height: 2rem;
 }
 
 #navBar {
@@ -29,6 +30,7 @@
     display: inline-block;
     color: dimgray;
     margin: 0 6px;
+    height: 1.5rem;
     cursor: pointer;
     text-align: center;
     font-family: 'code', monospace;
@@ -37,11 +39,12 @@
 
 @media screen and (max-width: 500px) {
     #navBar {
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #categoryList {
-        margin: auto;
+        margin: 0;
     }
 }
