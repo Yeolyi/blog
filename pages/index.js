@@ -25,10 +25,10 @@ export default function Home() {
     const id = setInterval(() => {
       setCheck((check + 1) % changingTexts.length)
       setShow(true);
-    }, 3000);
+    }, 2500);
     const id2 = setInterval(() => {
       setShow(false);
-    }, 2600)
+    }, 2100)
     return () => {
       clearInterval(id);
       clearInterval(id2);
@@ -44,7 +44,7 @@ export default function Home() {
         <Image src="/images/me.jpg" alt="" width="150px" height="150px" objectFit="cover"></Image>
       </div>
       <h2>{"안녕하세요,\n이성열입니다"}</h2>
-      <Transition in={show} timeout={500} nodeRef={nodeRef}>
+      <Transition in={show} timeout={400} nodeRef={nodeRef}>
         {state => (
           <div style={{
             ...defaultStyle,
