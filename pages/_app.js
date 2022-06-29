@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
   return <>
     <Head>
       <title> 개발자 이성열</title>
+      <link rel="" href="" />
     </Head>
     <NavHeader />
     <Container>

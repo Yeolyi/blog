@@ -1,0 +1,38 @@
+#homeContainer {
+    text-align: center;
+}
+
+#profileImage {
+    margin-bottom: 20px;
+}
+
+#profileImage img {
+    border-radius: 10px;
+}
+
+#homeContainer h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: bold;
+    white-space: pre;
+}
+
+#homeContainer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    white-space: pre;
+    line-height: 1.2;
+}
+
+#homeContainer li {
+    list-style-type: none;
+
+}
+
+#homeContainer li a {
+    font-family: code;
+    display: block;
+    text-decoration: none;
+    color: royalblue;
+    margin-bottom : 8px;
+}
