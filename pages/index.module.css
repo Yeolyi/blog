@@ -17,16 +17,19 @@
     white-space: pre;
 }
 
-#homeContainer h3 {
+.changingTexts {
+    color: dimgray;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+#homeContainer > h3 {
     font-size: 1.2rem;
     margin-bottom: 40px;
-    white-space: pre;
-    line-height: 1.2;
 }
 
 #homeContainer li {
     list-style-type: none;
-
 }
 
 #homeContainer li a {
@@ -34,5 +37,5 @@
     display: block;
     text-decoration: none;
     color: royalblue;
-    margin-bottom : 8px;
+    margin-bottom: 8px;
 }
