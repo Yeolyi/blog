@@ -1,4 +1,4 @@
-import styles from "./til.module.css"
+import styles from "./index.module.css"
 import { getSortedPostsData } from "../../lib/posts";
 import Stories from "../../components/stories";
 import Link from "next/link";

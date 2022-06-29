@@ -1,6 +1,6 @@
 import Stories from "../../components/stories";
 import { getBookmarks, getSortedPostsData } from "../../lib/posts";
-import styles from "./archive.module.css"
+import styles from "./index.module.css"
 import Link from "next/link";
 
 export default function Archive({ allPostsData, bookmarkData }) {
@@ -20,7 +20,7 @@ export default function Archive({ allPostsData, bookmarkData }) {
 function PostRow({postData}) {
     return <div className={ styles.archiveRow }>
             {/* 이게 최선? */}
-            <Link href={`/stories/archive/${postData.id}`}>  
+            <Link href={`/archive/${postData.id}`}>  
                 <a>{postData.title}</a>
             </Link>
         </div>;

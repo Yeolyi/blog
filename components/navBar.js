@@ -12,9 +12,9 @@ export default function NavBar() {
 }
 
 const categories = [
-    { name: "TIL", link: "/stories/til" },
-    { name: "Archive", link: "/stories/archive" },
-    { name: "Writing", link: "/stories/writing" },
+    { name: "TIL", link: "/til" },
+    { name: "Archive", link: "/archive" },
+    { name: "Writing", link: "/writing" },
     { name: "Dict", link: "/dict" },
 ];
 

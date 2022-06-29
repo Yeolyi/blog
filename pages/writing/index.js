@@ -1,6 +1,6 @@
 import Stories from "../../components/stories";
 import { getSortedPostsData } from "../../lib/posts";
-import styles from "./writing.module.css"
+import styles from "./index.module.css"
 import Link from "next/link";
 
 export default function Writing({ postData }) {
@@ -14,7 +14,7 @@ export default function Writing({ postData }) {
 function PostRow({postData}) {
     return (
         <li className={styles.postRow}>
-            <Link href={`/stories/writing/${postData.id}`}>
+            <Link href={`/writing/${postData.id}`}>
                 <a>
                     <h2>{postData.title}</h2>
                     <h3>{postData.date}</h3>

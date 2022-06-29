@@ -1,6 +1,6 @@
-import { getAllPostIds, getPostData } from "../../../lib/posts";
+import { getAllPostIds, getPostData } from "../../lib/posts";
 import styles from "./[id].module.css"
-import PostContent from "../../../components/postContent";
+import PostContent from "../../components/postContent";
 
 export default function WritingContent({ postData }) {
     return <>
