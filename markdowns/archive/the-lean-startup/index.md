@@ -384,13 +384,124 @@ Failure To Pivot ~ 읽기
 
 ## Part Three. ACCELERATE
 
+> The critical first question for any lean transformation is: which activities create value and which are a form of waste?
 
+파트3에서는 스타트업의 생명인 속도와 민첩함을 희생시키지 않고 성장하는 방법을 다룬다. 
+
+- Chapter 9: Counterintuitive power of small batches.
+- Chapter 10: Metrics startups should use to understand their growth
+- Chapter 11: How to build adaptive organization
+- Chapter 12: Techniques for incubating innovation teams within the context of an established company. 
+- Epilogue: Broader implications of the success of the Lean Startup movement.
 
 ### 9. Batch
 
+“Batch size”란 한 단계에서 다른 단계로 한번에 얼마만큼의 일이 이동하는지를 의미한다. 
+
+“single-piece flow”는 작은 배치 사이즈로부터 오는 강력함을 지닌다. 한번에 많은 일을 처리하는 것이 효율적으로 보이지만, 많은 일들을 정렬하고 관리하는 오버헤드는 종종 무시되며 개개인의 효율은 시스템의 전체 효율만큼 중요하지 않다. 
+
+> The biggest advantage of working in small batches is that quality problems can be identified much sooner. This is the origin of Toyota’s famous andon cord, which allows any worker to ask for help as soon as they notice any problem, such as a defect in a physical part, stopping the entire productin line if it cannot be corrected immediately. 
+
+**창업가 정신에서의 작은 배치**
+
+작은 배치 사이즈로 일하는 것은 스타트업이 결과적으로 낭비가 될 일들에 시간, 자본, 노력을 들이는 것을 최소화시킨다. 
+
+작은 배치 사이즈를 활용하여 지속적으로 새로운 기능을 출시하기 위해서는 결함을 즉각적으로 인지하고 더 큰 문제가 발생하는 것을 사전에 방지하는 것이다. 
+
+**Continuous Deployment**
+
+1. 소프트웨어로 만들 수 있는 것은 하드웨어보다 훨씬 빠르게 변화시킬 수 있다. 
+2. 제조업의 발전으로 디자인의 변경을 어느때보다 빠르게 실제품에 반영할 수 있다. 
+3. 3D 프린팅과 프로토타입 도구의 발전으로 small batches of products를 제작할 수 있다. 
+
+> 배치 사이즈를 줄이는 것의 핵심은 하루에 몇십번을 shipping할 수 있다는 것이 아니고 Build-Measure-Learn 루프를 경쟁사보다 빠르게 돌릴 수 있다는 것이다. 
+
+> The ability to learn faster from customer is the essential competitive advantage that startups must possess. 
+
+**The Large-Batch Death Spiral**
+
+큰 배치사이즈는 작업자가 방해없이 일할 수 있게 해주기는 한다. 하지만 이전 작업에 변경 사항이 생겨 수정을 해야할 경우 다음 작업자는 대기상태에 빠진다. 
+
+> Large batches tend to grow over time. … Because moving the batch forward often results in additional work, rework, delays, and interruptions, everyone has an incentive to do work in ever-larger batches, trying to minimize this overhead. This is called the large-batch death spiral because, unlinke in manufacturing, there are no physical limit on the maximum size of a batch. 
+
+배치가 커질수록 그 배치는 ‘bet the company’의 제품이 된다. 이에 결함이 있으면 안되니 더 공들이게 된다. 
+
+**Pull, Don’t Push**
+
+기존의 제조업은 큰 재고 창고를 가져야했지만, 린 제조업에서는 pull이라는 기술로 재고의 문제를 해결한다. The ideal goal is to achieve small batches all the way down to single-piece flow along the entire supply chain. 이것이 토요타의 just-in-time production method. 
+
+실물 창고가 있는 제조업처럼 눈에 잘 띄지 않지만, 스타트업도 출시가 안된 MVP, 미완성 디자인, 아직 검증되지 않은 가정 등등 WIP(work-in-progress)를 가지고 있다. Push method를 pull로 바꾸고 배치 크기를 줄임으로서 WIP를 줄일 수 있다. 
+
+제조업에서 pull은 사용자 수요 레벨에서 생산이 이루어지게 돕는다. 
+
+린 스타트업에서 pull은 단순히 소비자가 원하는 것을 pull하는 것이 아닌데 이는 소비자는 자신이 무엇을 원하는지 잘 모르기 때문이다. 
+
+> It is not the customer, but rather our hypothesis about the customer, that pulls work from product develoopment and other functions. Any other work is waste. 
+
+** The Startup Way**
+
+Accountability > Process > Culture > People
+
+바른 프로세스 위에서만 위대한 회사 문화가 발전할 수 있다.
+
+조직이 직면하는 도전들에 빠르게 adapt할 수 있어야 린 스타트업은 작동한다.   Thie requires tackling the human challenges inherent in this new way of working; that is the subject of the remainder of Part Three.
+
 ### 10. Grow
 
+Engine of Growth에 대해 알아보자. 
+
+**성장은 어디로부터 오는가?**
+
+지속가능한 발전이란, 새 고객이 이전 고객의 행동으로부터 오는것을 말한다. 이에는 네가지 방법이 있다.
+
+- 구전
+- 제품 사용의 부산물(토스로 송금 등)
+- 광고(일회성이 아니라 수입으로부터)
+- 반복된 구매나 사용
+
+이 방법들로부터 지속가능한 성장의 피드백 루프가 힘을 얻으며 engine of growth라고 한다. 
+
+각각의 엔진들은 이들을 통해 회사가 얼마나 빠르게 성장할 수 있는지 알리는 고유한 지표가 있다. 
+
+**The Three Engines of Growth**
+
+> Startups don’t starve; they drown”
+
+스타트업은 미미한 변화만 일으키는 수만개의 아이디어가 아닌, validated learning으로 이끄는 실험에 집중해야한다. 위 엔진들은 중요한 지표에 집중하도록 돕는다. 
+
+The Sticky Engine of Growth: 제품을 사용하기 시작하면 계속 그럴 것이라는 기대가 있으므로 customer retention rate가 중요하다. Attrition rate/churn rate. 
+
+The Viral Engine of Growth: 제품을 사용하는 과정에서 자연스럽게 개인간 전파가 발생해야한다. 이는 viral coefficient로 계산될 수 있는 viral loop로 양적화될 수 있다. 이 엔진에 의존하는 회사는 이 coefficient를 늘리는데 무엇보다 집중해야한다. 이 수의 작은 차이가 future prospect에 엄청난 차이를 불러일으키기 때문이다. 이로써 광고주에게도 가치있어진다. 
+
+The Paid Engine of Growth: 여기서는 고객당 revenue와 새로운 고객을 얻기 위한 비용을 비교해야한다. LTV(lifetime value): 손님으로 있는 동안 지불하는 총 금액. CPA(cost per acquisition) 광고에서 1명의 고객에 소모된 금액. LTV와 CPA의 차이(marginal profit)가 엔진의 속도를 결정짓는다. 
+
+...
+
+성공적인 스타트업은 보통 하나의 engine of growth에 집중한다. 하나의 엔진에 온전히 집중해본 후에야 다른 엔진으로 pivot를 고려할 수 있다. 
+
+**Engine of Growth Determine Product/Market Fit**
+
+product/market fit: 스타트업의 제품과 resonate하는 고객의 집합을 찾은 순간
+
+각각의 engine of growth가 양적으로 정의될 수 있기에 각각은 특수한 지표들을 가지며, 이들은 스타트업이 product/market fit을 이루는데 있어서 어디쯤에 있는지 평가하는데 사용될 수 있다. 
+
+> A startup can evaluate whether it is getting closer to produce/marketing fit as it tunes its engine by evaluating each trip through the Build-Measure-Learn feedback loop using innovation accounting.
+
+**When Engine Run Out**
+
+모든 engine of growth는 결국에 힘을 잃게 된다. 모든 엔진은 고객들과, 습관들, 광고 통로들에 얽혀있으며 이들은 소진된다. 
+
+Vanity metrics와 traditional accounting을 사용하면 숫자가 오른다는 사실만으로 제품이 좋아지고 있다고 착각할 수 있다. 하지만 성장은 engine of growth로부터 오지 제품의 개선으로부터 오는 것이 아니다.
+
+이를 극복하기 위해서는 활동의 portfolio를 관리하여 지속적으로 engine of growth를 튜닝하고 새로운 성장의 원천을 찾아야한다. 이에 대한 방법이 챕터 12이고 챕터 11에서는 그전에 이러한 빠르고 예측할 수 없는 상황에 대응할 수 있는 organizational structure, culture and discipline을 가진 adaptive organization에 대해 배운다. 
+
 ### 11. Adapt
+
+회사가 성장할수록, 더 커진 크기에 맞는 회사의 작업들을 다루기 위한 추가적인 프로세스와 시스템이 필요하다. 많은 스타트업은 이로인해 ossified되고 관료주의적으로 바뀐다. 
+
+그렇다고 절충안(split-the-difference)을 선택하면 어느때 어떤걸 선택할지 애매해지며, 상사의 선택을 유도하는 방법은 극단을 선택하는 것이 되어버린다. 
+
+
 
 ### 12. Innovate
 
