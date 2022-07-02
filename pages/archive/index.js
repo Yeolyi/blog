@@ -24,15 +24,13 @@ function PostRow({ postData }) {
             <div className={styles.archiveRow}>
                 <a>{postData.title}</a>
                 <h3>{postData.subtitle}</h3>
-                {
-                    <Image
-                        src={`/images/${postData.id}.jpg`}
-                        width="300px"
-                        height="200px"
-                        alt=""
-                        style={{ borderRadius: "5px" }}
-                    ></Image>
-                }
+                <Image
+                    src={`/images/${postData.id}.jpg`}
+                    width="300px"
+                    height="200px"
+                    alt=""
+                    style={{ borderRadius: "5px" }}
+                ></Image>
             </div>
         </Link >
     )

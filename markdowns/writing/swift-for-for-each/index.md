@@ -1,5 +1,6 @@
 ---
 title: Swift for-in과 forEach 차이
+subtitle: Stackoverflow 번역글
 date: 2021-09-14
 ---
 

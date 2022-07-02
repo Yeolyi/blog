@@ -12,8 +12,8 @@ export default function TilList({ allPostsData }) {
                     const timeTables = Object.keys(post.time_table)
                         .join(", ");
                     return (
-                        <Link href={"/til/" + post.id} >
-                            <div className={styles.tilRow} key={post.id}>
+                        <Link href={"/til/" + post.id} key={post.id}>
+                            <div className={styles.tilRow}>
                                 <a>{post.date}</a>
                                 <h3>{timeTables}</h3>
                             </div>

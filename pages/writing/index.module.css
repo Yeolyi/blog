@@ -1,9 +1,10 @@
-.postRow:not(:last-child) {
-    margin-bottom: 1.5rem;
-}
-
 .postRow {
+    width: 300px;
     list-style: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    display: flex; /* 이게 있어야 after가 보이네?? */
+    flex-direction: column;
 }
 
 .postRow a {
@@ -19,4 +20,17 @@
     font-size: 0.8rem;
     font-family: regular;
     color: dimgray;
+    margin-bottom: 10px;
+}
+
+.postRow:not(:last-child)::after {
+    width: 100%;
+    content: "";
+    height: 1px;
+    background-color: lightgray;
+    margin-top: 1rem;
+}
+
+.postDate {
+    margin-top: 10px;
 }

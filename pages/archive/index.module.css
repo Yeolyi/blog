@@ -12,7 +12,7 @@
     word-break: keep-all;
 }
 
-.archiveRow::after {
+.archiveRow:not(:last-child)::after {
     width: 100%;
     content: "";
     height: 1px;
