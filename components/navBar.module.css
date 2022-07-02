@@ -11,7 +11,7 @@
     align-items: center;
     background-color: rgba(250, 250, 250, 0.95);
     backdrop-filter: blur(2px);
-    z-index: 1;
+    z-index: 999;
 }
 
 #navBar h2 {

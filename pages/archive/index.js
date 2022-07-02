@@ -3,6 +3,7 @@ import { getBookmarks, getSortedPostsData } from "../../lib/posts";
 import styles from "./index.module.css"
 import Link from "next/link";
 import Image from "next/image";
+import { archiveTheme } from "../../styles/color";
 
 export default function Archive({ allPostsData, bookmarkData }) {
     const postRows = allPostsData.map(x => <PostRow postData={x} key={x.id} />);
@@ -29,7 +30,7 @@ function PostRow({ postData }) {
                     width="300px"
                     height="200px"
                     alt=""
-                    style={{ borderRadius: "5px", background: "#212A2E"}}
+                    style={{ borderRadius: "5px", background: archiveTheme}}
                 ></Image>
             </div>
         </Link >

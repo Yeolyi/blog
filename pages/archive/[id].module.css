@@ -1,5 +1,19 @@
-#archiveContent>h2 {
-    white-space: pre-line;
+#archiveHeader {
+    position: sticky;
+    top: 120px; /* 더 좋은 방법 찾아보기 */
+    z-index: -1;
+    padding: 10px;
     margin-bottom: 3rem;
+    border-radius: 5px;
+}
+
+#archiveHeader>h2 {
+    white-space: pre-line;
     font-size: 2.5rem;
+    color: white;
+}
+
+#archiveHeader>h3 {
+    font-size: 1rem;
+    color: lightgray;
 }

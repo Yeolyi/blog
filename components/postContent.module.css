@@ -1,3 +1,15 @@
+#postContent {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#postContent::before {
+    content: "";
+    border: lightGray solid 0.5px;
+    margin-bottom: 20px;
+}
+
 #postContent p {
     font-size: 1rem;
     font-family: 'regular', sans-serif;
