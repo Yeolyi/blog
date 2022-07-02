@@ -1,8 +1,9 @@
-/* #A69D85 */
-/* #F2D9BB */
-/* #402312 */
-/* #D9936A */
-/* #260502 */
+/* #212A2E */
+/* #5E3124 */
+/* #AE5633 */
+/* #E08149 */
+/* #F0AD5F */
+/* #718A91 */
 
 @font-face {
   font-family: 'bold';
@@ -36,5 +37,5 @@
   padding: 0; /* 없으면 이상한 padding margin이 붙음 */
   margin: 0; 
   -webkit-text-size-adjust: 100%;
-  color: #333
+  color: #333;
 }

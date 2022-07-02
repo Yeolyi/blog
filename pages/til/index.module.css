@@ -1,5 +1,6 @@
 #tilList {
     list-style: none;
+    width: 300px;
 }
 
 .tilRow {
@@ -18,4 +19,5 @@
 .tilRow h3 {
     font-size: 0.8rem;
     font-family: regular;
+    word-break: keep-all;
 }

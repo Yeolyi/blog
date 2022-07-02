@@ -1,6 +1,7 @@
 import Link from "next/link"
 import styles from "./navBar.module.css"
 import { useRouter } from 'next/router'
+import Image from "next/image"
 
 export default function NavBar() {
     return <>

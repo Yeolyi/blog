@@ -3,19 +3,21 @@
 }
 
 .archiveRow {
+    width: 300px;
     margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     cursor: pointer;
+    word-break: keep-all;
 }
 
 .archiveRow::after {
-    content: "";
     width: 100%;
-    height: 2px;
+    content: "";
+    height: 1px;
     background-color: lightgray;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .archiveRow a {
