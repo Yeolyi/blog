@@ -25,11 +25,11 @@ function PostRow({ postData }) {
                 <a>{postData.title}</a>
                 <h3>{postData.subtitle}</h3>
                 <Image
-                    src={`/images/${postData.id}.jpg`}
+                    src={`/images/${postData.id}.png`}
                     width="300px"
                     height="200px"
                     alt=""
-                    style={{ borderRadius: "5px" }}
+                    style={{ borderRadius: "5px", background: "#212A2E"}}
                 ></Image>
             </div>
         </Link >

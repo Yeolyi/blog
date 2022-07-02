@@ -21,11 +21,11 @@ function PostRow({ postData }) {
                     <h3>{postData.subtitle}</h3>
                 </a>
                 <Image
-                    src={`/images/${postData.id}.jpg`}
+                    src={`/images/${postData.id}.png`}
                     width="300px"
                     height="200px"
                     alt=""
-                    style={{ borderRadius: "5px" }}
+                    style={{ borderRadius: "5px", backgroundColor: "#718A91" }}
                 ></Image>
                 <h3 className={styles.postDate}>{postData.date}</h3>
             </li>
