@@ -11,16 +11,12 @@
 }
 
 .postRow h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-family: bold;
 }
 
 .postRow h3 {
     font-size: 0.8rem;
+    font-family: regular;
     color: dimgray;
-}
-
-#postTitle {
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    white-space: pre-line;
 }

@@ -1,5 +1,6 @@
 ---
 title: 배민 CEO가 원하는 개발자
+subtitle: 좋은 개발자에게 필요한 능력이란 무엇일까?
 ---
 
 [YouTube-배달의민족 CEO에게 뽑고 싶은 개발자를 물어보았다](https://www.youtube.com/watch?v=3H4umWD5bwI)

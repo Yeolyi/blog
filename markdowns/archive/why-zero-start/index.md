@@ -1,5 +1,6 @@
 ---
-title: '왜 0부터 수를 셀까'
+title: 왜 0부터 수를 셀까
+subtitle: 가장 자연수같은 수 0
 ---
 
 [E.W. Dijkstra Archive: Why numbering should start at zero (EWD 831)](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html)

@@ -5,9 +5,17 @@
 .tilRow {
     list-style: none;
     list-style-position: inside;
-    margin-bottom: 12px;
+    margin-bottom: 1rem;
     display: block;
-    color: black;
+}
+
+.tilRow a {
     font-size: 1rem;
+    font-family: bold;
     text-decoration: none;
+}
+
+.tilRow h3 {
+    font-size: 0.8rem;
+    font-family: regular;
 }

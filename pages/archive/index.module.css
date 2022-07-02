@@ -3,13 +3,31 @@
 }
 
 .archiveRow {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.archiveRow::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: lightgray;
+    margin-top: 1.5rem;
 }
 
 .archiveRow a {
     font-size: 1rem;
-    color: black;
+    font-family: bold;
     text-decoration: none;
+}
+
+.archiveRow h3 {
+    font-size: 0.8rem;
+    color: dimgray;
+    padding-bottom: 10px;
 }
 
 .archiveBookmark {
@@ -17,6 +35,8 @@
 }
 
 .archiveBookmark a {
+    font-family: bold;
+    font-size: 1rem;
     display: block;
     text-decoration: none;
     color: royalblue 

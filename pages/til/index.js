@@ -3,15 +3,21 @@ import { getSortedPostsData } from "../../lib/posts";
 import Stories from "../../components/stories";
 import Link from "next/link";
 
-export default function TilList({ allPostsData, bookmarks }) {
+export default function TilList({ allPostsData }) {
+
     return (
         <Stories type="til">
             <ol id={styles.tilList}>
                 {allPostsData.map(post => {
+                    const timeTables = Object.keys(post.time_table)
+                        .join(", ");
                     return (
-                        <Link href={"til/" + post.id} key={post.id}>
-                            <a className={styles.tilRow}>{post.date}</a>
-                        </Link>
+                        <div className={styles.tilRow} key={post.id}>
+                            <Link href={"/til/" + post.id} >
+                                <a>{post.date}</a>
+                            </Link>
+                            <h3>{timeTables}</h3>
+                        </div>
                     )
                 })}
             </ol>
@@ -21,6 +27,7 @@ export default function TilList({ allPostsData, bookmarks }) {
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData("til");
+    console.log(allPostsData);
     return {
         props: {
             allPostsData
