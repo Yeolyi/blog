@@ -12,12 +12,12 @@ export default function TilList({ allPostsData }) {
                     const timeTables = Object.keys(post.time_table)
                         .join(", ");
                     return (
-                        <div className={styles.tilRow} key={post.id}>
-                            <Link href={"/til/" + post.id} >
+                        <Link href={"/til/" + post.id} >
+                            <div className={styles.tilRow} key={post.id}>
                                 <a>{post.date}</a>
-                            </Link>
-                            <h3>{timeTables}</h3>
-                        </div>
+                                <h3>{timeTables}</h3>
+                            </div>
+                        </Link>
                     )
                 })}
             </ol>
