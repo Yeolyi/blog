@@ -501,6 +501,26 @@ Vanity metrics와 traditional accounting을 사용하면 숫자가 오른다는 
 
 그렇다고 절충안(split-the-difference)을 선택하면 어느때 어떤걸 선택할지 애매해지며, 상사의 선택을 유도하는 방법은 극단을 선택하는 것이 되어버린다. 
 
+> This process of orientation was subject to constant experimentation and revision so that is grew more effective - and less burdensome - over time. I call this building an adaptive organization, one that automatically adjusts its process and performance to current conditions. 
+
+**Can You Go Too Fast?**
+
+너무 빠르게 가는 것은 파괴적일 수 있다. 스타트업은 팀에 최적화된 속도를 찾는 내제된 과속 방지제가 있어야한다. 
+
+린 제조업 운동에서는 시간을 위해 품질을 포기하지 않는다. 지금 품질 문제가 생긴다면, 그 결함은 이후 작업을 느리게 할 것이다. 
+
+이처럼 MVP를 통해 고객들에게 제품을 빠르게 전달해야하지만, 낮은 질의 제품은 고객으로부터의 학습을 방해할 수 있다. 이번 챕터에서는 규모와 질을 just-in-time fashion으로 달성하는 기술들을 배운다. 
+
+**The Wisdom of the Five Whys**~
+
+Adaptive process는 서행을 강제해서 현재 시간을 낭비시키에 하는 문제들을 방지하는데 노력하도록 한다. 
+
+> ... a system called the Five Whys to make incremental investments and evolve a startup's progress gradually. 
+
+대부분의 기술적 문제의 근원은 사람이며, Five Whys는 이를 밝혀내는 기회를 제공한다. 
+
+**Make a Proportional Investment**
+
 
 
 ### 12. Innovate
@@ -508,7 +528,7 @@ Vanity metrics와 traditional accounting을 사용하면 숫자가 오른다는 
 ### 13. Epilogue: Waste Not
 
 > In 1911 Taylor(Fredrick Winslow Taylor) wrote: "In the past, the man ahs been first; in the future, the system must be first"
-
+~
 일은  과학적으로 탐구될 수 있으며 엄격한 실험적 접근방법으로 개선될 수 있다. 
 
 하지만 20세기와는 다르게 이제 우리의 생산능력은 무엇을 생산할지 아는 능력을 훨씬 능가한다. 
