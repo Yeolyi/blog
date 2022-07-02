@@ -1,7 +1,8 @@
 #archiveHeader {
-    position: sticky;
-    top: 120px; /* 더 좋은 방법 찾아보기 */
-    z-index: -1;
+    /* position: sticky;
+    top: 100px; 
+    z-index: -1; */
+    /* 깔끔하게 할 방법 찾아보기 */
     padding: 10px;
     margin-bottom: 3rem;
     border-radius: 5px;
