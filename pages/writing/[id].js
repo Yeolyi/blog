@@ -13,6 +13,7 @@ export default function WritingContent({ postData }) {
                     layout="fill"
                     objectFit="cover"
                     alt=""
+                    priority={true}
                 >
                 </Image>
             </div>

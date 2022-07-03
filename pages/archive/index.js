@@ -30,7 +30,8 @@ function PostRow({ postData }) {
                     width="300px"
                     height="200px"
                     alt=""
-                    style={{ borderRadius: "5px", background: archiveTheme}}
+                    priority={true}
+                    style={{ borderRadius: "5px", background: archiveTheme }}
                 ></Image>
             </div>
         </Link >

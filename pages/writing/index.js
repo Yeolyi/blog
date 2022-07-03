@@ -26,6 +26,7 @@ function PostRow({ postData }) {
                     width="300px"
                     height="200px"
                     alt=""
+                    priority={true}
                     style={{ borderRadius: "5px", backgroundColor: writingTheme }}
                 ></Image>
                 <h3 className={styles.postDate}>{postData.date}</h3>
