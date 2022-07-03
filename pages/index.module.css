@@ -6,9 +6,16 @@
     border-radius: 5px;
 }
 
+#mainIntroductionBackground {
+    top: 0;
+    background: #1E2B31;
+    z-index: -999;
+}
+
 #mainIntroduction {
-    margin-bottom: 50px;
-    background: black;
+    max-width: 650px;
+    margin: 0 auto 0 auto;
+    padding: 30px;
 }
 
 #mainIntroduction h2 {
@@ -16,10 +23,11 @@
     margin-bottom: 12px;
     font-family: bold;
     white-space: pre;
+    color: #F0F0F0;
 }
 
 #mainIntroduction h3 {
-    color: dimgray;
+    color: #DDDDDD;
     font-size: 1rem;
 }
 
@@ -30,12 +38,36 @@
 #links * {
     font-size: 1.2rem;
     text-decoration: none;
-    color: dimgray;
+    color: lightgray;
     margin-right: 8px;
     cursor: pointer;
 }
 
 #categoryDescription h2 {
     font-family: bold;
+    color: dimgray;
+}
+
+#content {
+    max-width: 650px;
+    margin: 0 auto 25% auto;
+    padding: 30px;
+}
+
+#categoryList {
+    margin-bottom: 24px;
+    width: 300px;
+    border-bottom: lightgray solid .5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#categoryList h2 {
+    font-family: bold;
+    font-size: 2rem;
+}
+
+#categoryList h3 {
+    font-size: 1rem;
     color: dimgray;
 }
