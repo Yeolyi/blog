@@ -1,23 +1,23 @@
-#imageWrapper span {
-    position: relative;
-    filter: blur(3px) brightness(60%);
-}
-
 #archiveHeader {
     position: sticky;
     top: 80px;
-    z-index: -10;
+    z-index: -999;
 }
 
 #archiveHeaderContent {
-    position: relative;
     padding: 20px;
+}
+
+#imageWrapper span {
+    filter: blur(3px) brightness(60%);
+    z-index: -1;
 }
 
 #archiveHeaderContent h2 {
     white-space: pre-line;
     font-size: 2.5rem;
     color: white;
+    margin-bottom: 8px;
 }
 
 #archiveHeaderContent h3 {

@@ -1,9 +1,41 @@
-#postHeader h2 {
-    white-space: pre-line;
-    font-size: 2.5rem;
-    line-height: 3rem;
+#postHeader {
+    position: sticky;
+    top: 80px;
+    z-index: -999;
 }
 
-#postHeader h3 {
-    margin-bottom: 4rem;
+#postHeaderContent {
+    padding: 20px;
+}
+
+#imageWrapper span {
+    filter: blur(3px) brightness(60%);
+    z-index: -1;
+}
+
+#postHeaderContent h2 {
+    white-space: pre-line;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 8px;
+}
+
+#postHeaderContent h3 {
+    font-size: 1rem;
+    color: lightgray;
+}
+
+#postHeaderContent p {
+    font-size: 1rem;
+    color: lightgray;
+}
+
+#postText {
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    #postHeader {
+        top: 112px;
+    }
 }

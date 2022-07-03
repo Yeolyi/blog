@@ -5,7 +5,7 @@ import { archiveTheme } from "../../styles/color"
 import Image from "next/image"
 
 export default function ArchiveContent({ postData }) {
-    return <div id={styles.archiveContent}>
+    return <>
         <div id={styles.archiveHeader} style={{ backgroundColor: archiveTheme }}>
             <div id={styles.imageWrapper}>
                 <Image
@@ -25,7 +25,7 @@ export default function ArchiveContent({ postData }) {
         <div id={styles.archiveText}>
             <PostContent>{postData.content}</PostContent>
         </div>
-    </div >
+    </>
 }
 
 export function getStaticPaths() {
