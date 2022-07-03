@@ -1,20 +1,36 @@
-#archiveHeader {
-    /* position: sticky;
-    top: 100px; 
-    z-index: -1; */
-    /* 깔끔하게 할 방법 찾아보기 */
-    padding: 10px;
-    margin-bottom: 3rem;
-    border-radius: 5px;
+#imageWrapper span {
+    position: relative;
+    filter: blur(3px) brightness(60%);
 }
 
-#archiveHeader>h2 {
+#archiveHeader {
+    position: sticky;
+    top: 80px;
+    z-index: -10;
+}
+
+#archiveHeaderContent {
+    position: relative;
+    padding: 20px;
+}
+
+#archiveHeaderContent h2 {
     white-space: pre-line;
     font-size: 2.5rem;
     color: white;
 }
 
-#archiveHeader>h3 {
+#archiveHeaderContent h3 {
     font-size: 1rem;
     color: lightgray;
+}
+
+#archiveText {
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    #archiveHeader {
+        top: 112px;
+    }
 }
