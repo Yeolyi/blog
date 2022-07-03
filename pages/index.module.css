@@ -1,41 +1,34 @@
-#homeContainer {
-    text-align: center;
-}
-
 #profileImage {
     margin-bottom: 20px;
 }
 
 #profileImage img {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
-#homeContainer h2 {
+#mainIntroduction {
+    margin-bottom: 15px;
+}
+
+#mainIntroduction h2 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-family: bold;
     white-space: pre;
 }
 
-.changingTexts {
+#mainIntroduction h3 {
     color: dimgray;
+    font-size: 1rem;
+}
+
+#links {
+    margin-top: 12px;
+}
+
+#links * {
     font-size: 1.2rem;
-    margin-bottom: 0;
-}
-
-#homeContainer > h3 {
-    font-size: 1.2rem;
-    margin-bottom: 40px;
-}
-
-#homeContainer li {
-    list-style-type: none;
-}
-
-#homeContainer li a {
-    font-family: code;
-    display: block;
     text-decoration: none;
-    color: royalblue;
-    margin-bottom: 8px;
+    color: dimgray;
+    margin-right: 8px;
 }
