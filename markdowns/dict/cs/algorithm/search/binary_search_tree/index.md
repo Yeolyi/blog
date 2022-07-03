@@ -36,7 +36,7 @@ while (!cur)
 
 이것도 첫 if문 필요 없음
 
-```
+```c
 while (cur && (cur->data.key != key))
     {
         parent = cur;

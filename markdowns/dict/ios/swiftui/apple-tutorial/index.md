@@ -32,7 +32,7 @@ To customize a SwiftUI view, you call methods known as **modifiers**. Each modif
 strokeBorder modifier 해석이 안된다 ㅋㅋㅋ
 accessibility label은 왜 text를 패러미터로 받지?
 
-```
+```swift
 Button(action: {}) {
     Image(systemName: "forward.fill")
 }
@@ -57,7 +57,7 @@ VoiceOver reads the label “Next speaker,” followed by the inherent accessibi
 
 VStack은 다음과 같이 선언되어있다. 
 
-```
+```swift
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 @frozen public struct VStack<Content> : View where Content : View {
 
@@ -109,7 +109,7 @@ Notice that you add the .navigationTitle modifier to the List. The child view ca
 
 navigationBarItems(leading:trailing:). Deprecated. Use toolbar(content:) with navigationBarLeading or navigationBarTrailing placement.
 
-```
+```swift
 .toolbar {
     ToolbarItem(placement: .navigationBarTrailing) {
         Button(action: {}) {
@@ -145,14 +145,14 @@ Declare @State properties as private so they can be accessed only within the vie
 
 TextField takes a binding to a String. A binding is a reference to a state that is owned by another view.
 
-```
+```swift
 Slider(value: $scrumData.lengthInMinutes, in: 5...30, step: 1.0) {
     Text("Length")
 }
 ```
 The Text view won’t appear on screen, but VoiceOver uses it to identify the purpose of the slider.
 
-```
+```swift
 ColorPicker("Color", selection: $scrumData.color)
     .accessibilityValue(Text("Color picker"))
 ```
@@ -171,7 +171,7 @@ You can use the constant(_:) type method to create a binding to a hard-coded, im
 
 그.. 여기 방식이 좋은건가? edit이랑 상관없는 뷰에 순전히 edit을 위한 변수가 있는게 맞는걸까?? 그리고 이럴거면 왜 binding을 해 그냥 값으로 넘겨줘도 되지. 아 굳이 edit에 모델을 통으로 넣지 않기 위해 이러는건가?!?! edit 뷰를 부모 뷰에서 많이 정의하는 것이 인상깊다. 
 
-```
+```swift
 Button("Edit") {
     isPresented = true
     data = scrum.data
@@ -180,7 +180,7 @@ Button("Edit") {
 
 이게 되는거보면 순서는 클로저 내에서 상관없는듯??
 
-```
+```swift
 private func binding(for scrum: DailyScrum) -> Binding<DailyScrum> {
         guard let scrumIndex = scrums.firstIndex(where: { $0.id == scrum.id }) else {
             fatalError("Can't find scrum in array")
@@ -201,7 +201,7 @@ projectedValue란 A binding to the state value.
 
 @State가 아니면 Cannot find '$scrums' in scope이라고 뜸. projectedValue가 없어서 그럴까?
 
-```
+```swift
 struct Book {
     var title: String
     var identifier: Int
@@ -218,7 +218,7 @@ ZStack overlays views back to front
 
 .previewLayout(.sizeThatFits)
 
-```
+```swift
 private var minutesRemaining: Int {
     secondsRemaining / 60
 }
@@ -229,7 +229,7 @@ private var minutesRemainingMetric: String {
 
 아니 이러면 1분 미만이면 어떡하게??? 
 
-```
+```swift
 struct ScrumProgressViewStyle: ProgressViewStyle {
     var scrumColor: Color
 
@@ -252,7 +252,7 @@ You’ve used @State to create a source of truth for value type models. You can 
 
 ObservedObject의 문제점이 뭐였더라,,, [링크](https://nalexn.github.io/swiftui-observableobject/)
 
-```
+```swift
 timer = Timer.scheduledTimer(withTimeInterval: frequency, repeats: true) { [weak self] timer in
     if let self = self, let startDate = self.startDate {
         let secondsElapsed = Date().timeIntervalSince1970 - startDate.timeIntervalSince1970

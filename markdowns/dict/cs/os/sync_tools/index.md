@@ -101,7 +101,7 @@ Peterson의 솔루션은 최신 컴퓨터 아키텍처에서 작동한다고 보
 **test_and_set()으로 구현한 상호 배제**. 
 물론 이렇게만 하면 bounded waiting은 해결 못함!
 
-```
+```c
 boolean test_and_set(boolean *target) {
     booleadn rv = *target;
     *target = true;
@@ -125,7 +125,7 @@ do {
 **compare_and_swap()으로 구현한 상호 배제**. 
 마찬가지로 bounded waiting은 해결 못함.
 
-```
+```c
 int compare_and_swap(int *value, int expected, int new_value) {
     int temp = *value;
     if (*value == expected)

@@ -6,7 +6,7 @@ title: Codable 프로토콜
 
 > A type that can convert itself into and out of an external representation.
 
-```
+```swift
 typealias Codable = Decodable & Encodable
 ```
 

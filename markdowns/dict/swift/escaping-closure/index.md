@@ -14,7 +14,7 @@ Swift에서 함수는 일급 객체이다.
 
 클로저는 그것이 정의된('실행된'이 아니다! lexical scope라고 하던가...) surrounding context에 있는 변수와 상수를 capture하여 그 context가 소멸된 후에도 사용할 수 있다. 
 
-```
+```swift
 func makeIncrementer(forIncrement amount: Int) -> () -> Int {
     var runningTotal = 0
     func incrementer() -> Int {
@@ -27,7 +27,7 @@ func makeIncrementer(forIncrement amount: Int) -> () -> Int {
 
 클로저는 참조 타입이다. 
 
-```
+```swift
 let alsoIncrementByTen = incrementByTen
 alsoIncrementByTen()
 // returns a value of 50
