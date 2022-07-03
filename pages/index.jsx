@@ -3,6 +3,7 @@ import Image from "next/image"
 import { useState, useEffect, useRef } from "react"
 import { Transition } from "react-transition-group"
 import { FaGithub, FaInstagram } from "react-icons/fa"
+import Link from "next/link"
 
 const changingTexts = ["코드로 가치를 만드는", "아이같이 상상하는", "항상 공부하는"]
 
@@ -17,13 +18,6 @@ const transitionStyles = {
   exiting: { opacity: 0 },
   exited: { opacity: 0 },
 };
-
-const categoryList = [
-  { name: "TIL", description: "AAA" },
-  { name: "Archive", description: "AAA" },
-  { name: "Writing", description: "AAA" },
-  { name: "Dict", description: "AAA" },
-]
 
 export default function Home() {
   const [check, setCheck] = useState(0);
@@ -69,13 +63,9 @@ export default function Home() {
           <a href="https://www.instagram.com/studyeolyi"><FaInstagram /></a>
         </div>
       </div>
-      <div>
-          
+      <div id={styles.links}>
+          <Link href="/til"><a><strong>Til</strong>에 매일의 공부를 기록합니다.</a></Link>
       </div>
     </div>
   )
-}
-
-function CategoryDescriptions() {
-
 }

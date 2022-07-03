@@ -1,6 +1,5 @@
 #container {
     max-width: 650px;
-    margin-bottom: 50%;
-    margin: 0 auto;
+    margin: 0 auto 25% auto;
     padding: 15px;
 } 

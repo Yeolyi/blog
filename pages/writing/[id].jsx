@@ -3,9 +3,10 @@ import styles from "./[id].module.css"
 import PostContent from "../../components/postContent";
 import Image from "next/image";
 import { writingTheme } from "../../styles/color";
+import Container from "../../components/container";
 
 export default function WritingContent({ postData }) {
-    return <>
+    return <Container>
         <div id={styles.postHeader} style={{ backgroundColor: writingTheme }}>
             <div id={styles.imageWrapper}>
                 <Image
@@ -27,7 +28,7 @@ export default function WritingContent({ postData }) {
         <div id={styles.postText}>
             <PostContent>{postData.content}</PostContent>
         </div>
-    </>
+    </Container>
 }
 
 export function getStaticPaths() {

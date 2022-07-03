@@ -10,9 +10,7 @@ function MyApp({ Component, pageProps }) {
       <link rel="" href="" />
     </Head>
     <NavHeader />
-    <Container>
-      <Component {...pageProps} />
-    </Container>
+    <Component {...pageProps} />
   </>
 }
 

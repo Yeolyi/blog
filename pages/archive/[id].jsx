@@ -3,9 +3,10 @@ import styles from "./[id].module.css"
 import PostContent from "../../components/postContent"
 import { archiveTheme } from "../../styles/color"
 import Image from "next/image"
+import Container from "../../components/container"
 
 export default function ArchiveContent({ postData }) {
-    return <>
+    return <Container>
         <div id={styles.archiveHeader} style={{ backgroundColor: archiveTheme }}>
             <div id={styles.imageWrapper}>
                 <Image
@@ -26,7 +27,7 @@ export default function ArchiveContent({ postData }) {
         <div id={styles.archiveText}>
             <PostContent>{postData.content}</PostContent>
         </div>
-    </>
+    </Container>
 }
 
 export function getStaticPaths() {

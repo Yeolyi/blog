@@ -1,5 +1,6 @@
 import styles from "./stories.module.css"
 import { useState } from "react"
+import Container from "./container";
 
 const categories = [
     { name: "TIL", description: "Today I Learned\n매일 간단한 공부 기록" , link: "/til"},
@@ -14,12 +15,12 @@ export default function Stories({type, children}) {
     if (category.name !== newCategory.name) { setCategory(newCategory); }
 
     return (
-        <>
+        <Container>
         <nav id={styles.storyNav}>
             <div id={styles.currentLink} key={"currentLink"}>{ category.name }</div>
             <p>{ category.description }</p>
         </nav>
             {children}
-        </>
+        </Container>
     )
 }

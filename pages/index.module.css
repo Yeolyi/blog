@@ -7,7 +7,8 @@
 }
 
 #mainIntroduction {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
+    background: black;
 }
 
 #mainIntroduction h2 {
@@ -31,5 +32,10 @@
     text-decoration: none;
     color: dimgray;
     margin-right: 8px;
+    cursor: pointer;
 }
 
+#categoryDescription h2 {
+    font-family: bold;
+    color: dimgray;
+}

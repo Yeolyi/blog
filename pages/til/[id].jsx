@@ -1,13 +1,14 @@
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import styles from "./[id].module.css"
 import PostContent from "../../components/postContent"
+import Container from "../../components/container";
 
 export default function TilContent({ postData }) {
-    return (<>
+    return (<Container>
         <Date date={postData.date} />
         <TimeTable {...postData.time_table} />
         <PostContent>{ postData.content }</PostContent>
-    </>
+    </Container>
     )
 }
 
