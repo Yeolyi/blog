@@ -35,9 +35,8 @@
 }
 
 #postContent h2 {
-    color: #333;
     font-family: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     word-break: keep-all;
     margin-bottom: 2rem;
 }
@@ -47,9 +46,8 @@
 }
 
 #postContent h3 {
-    color: #333;
     font-family: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
     word-break: keep-all;

@@ -1,4 +1,14 @@
+#postHeader {
+    margin-bottom: 1rem;
+}
+
 #postTitle {
-    margin-bottom: 3rem;
-    font-size: 4rem;
+    font-size: 2rem;
+    font-family: bold;
+    white-space: pre;
+}
+
+#postSubtitle {
+    font-size: 1rem;
+    color: dimgray;
 }

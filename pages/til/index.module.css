@@ -4,13 +4,9 @@
 }
 
 .tilRow {
-    list-style: none;
-    list-style-position: inside;
-    margin-bottom: 0.5rem;
     cursor: pointer;
-    background-color: rgba(248, 248, 248, 0.7);
-    padding: 12px 10px;
-    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 16px;
 }
 
 .tilRow a {
@@ -23,4 +19,5 @@
     font-size: 0.8rem;
     font-family: regular;
     word-break: keep-all;
+    margin-bottom: 5px;
 }

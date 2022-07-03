@@ -4,7 +4,10 @@ import styles from "./[[...path]].module.css"
 
 export default function Dict({ postData, path }) {
     return <>
-        <h2 id={styles.postTitle}>{postData.title}</h2>
+        <div id={styles.postHeader}>
+            <h2 id={styles.postTitle}>{postData.title}</h2>
+            {postData.subtitle ? <h3 id={styles.postSubtitle}>{postData.subtitle}</h3> : null}
+        </div>
         <PostContent path={path}>{postData.content}</PostContent>
     </>
 }
@@ -18,7 +21,7 @@ export function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const postData = params.path ? await getPostData("dict", ...params.path) : await getPostData("dict"); 
+    const postData = params.path ? await getPostData("dict", ...params.path) : await getPostData("dict");
     return {
         props: {
             postData,

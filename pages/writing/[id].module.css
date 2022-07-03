@@ -15,7 +15,8 @@
 
 #postHeaderContent h2 {
     white-space: pre-line;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-family: bold;
     color: white;
     margin-bottom: 8px;
 }
