@@ -102,5 +102,6 @@
 
 #postContent code * {
     font-family: 'code';
-    color: #D4D5C1
+    color: #D4D5C1;
+    word-break: break-word;
 }
