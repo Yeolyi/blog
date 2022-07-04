@@ -20,8 +20,8 @@
 #postContent a {
     font-size: 1rem;
     font-family: 'regular', sans-serif;
-    text-decoration: none;
-    color: royalblue;
+    text-decoration: underline;
+    color: dimgray;
 }
 
 #postContent strong {
