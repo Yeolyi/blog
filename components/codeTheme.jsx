@@ -1,5 +1,6 @@
 // https://github.com/react-syntax-highlighter/react-syntax-highlighter/blob/master/src/styles/prism/tomorrow.js
 // 여기서는 왜 폰트 적용이 안됨??
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     "code[class*=\"language-\"]": {
         "color": "#ccc",
@@ -29,7 +30,7 @@ export default {
         "msHyphens": "none",
         "hyphens": "none",
         "padding": "1.5em 1em",
-        "margin": "3em 0",
+        "margin": "0",
         "borderRadius": "5px",
         "background": "#2E3134",
     },

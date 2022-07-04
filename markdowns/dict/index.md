@@ -3,7 +3,9 @@ title: 사전
 subtitle: 공부한 것들 창고
 ---
 
-
+### 언어
+[Swift](language/swift)
+[Javascript](language/javascript)
 
 ### 컴퓨터 과학
 [로드맵](cs/roadmap)
@@ -19,10 +21,6 @@ subtitle: 공부한 것들 창고
 [SwiftUI](ios/swiftui)
 [UIKit](ios/uikit)
 [Xcode가 group을 사용하는 이유](ios/why-xcode-use-group)
-
-### Swift
-[Escaping Closure](swift/escaping-closure)
-[frozen](swift/frozen)
 
 ### ETC
 [statement, expression, syntax, semantics](etc/syntax-vs-semantics)

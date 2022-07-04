@@ -17,6 +17,10 @@
     white-space: pre-wrap;
 }
 
+#postContent em {
+    color: dimgray;
+}
+
 #postContent a {
     font-size: 1rem;
     font-family: 'regular', sans-serif;
@@ -38,19 +42,22 @@
     font-family: bold;
     font-size: 1.5rem;
     word-break: keep-all;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 #postContent h2:not(:first-child) {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 #postContent h3 {
     font-family: bold;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
-    margin-top: 2rem;
     word-break: keep-all;
+}
+
+#postContent h3:not(:first-child) {
+    margin-top: 1.5rem;
 }
 
 #postContent ol {
@@ -64,39 +71,26 @@
 #postContent li {
     line-height: 2;
     margin-left: 20px;
+    margin-bottom: 4px;
 }
 
 #postContent blockquote {
     display: block;
     background: #eee;
     border-left: 4px solid #ccc;
-    padding: 4px 16px;
-    margin: 0;
 }
 
-#postContent p+p,
-#postContent ul+p,
-#postContent ol+p,
-#postContent p+pre,
-#postContent p+blockquote,
-#postContent blockquote+p {
-    margin-top: 16px;
+#postContent blockquote p {
+    padding: 8px 16px;
+    margin-bottom: 0;
 }
 
-#postContent blockquote+blockquote {
-    margin-top: 24px;
+#postContent * {
+    margin-bottom: 16px;
 }
 
 #postContent hr {
     margin: 24px 0;
-    color: dimgray;
-}
-
-#postContent pre+p {
-    margin-top: 24px;
-}
-
-#postContent pre+p>em {
     color: dimgray;
 }
 
