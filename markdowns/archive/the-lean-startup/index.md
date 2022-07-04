@@ -1,6 +1,7 @@
 ---
 title: 린 스타트업
 subtitle: Build, Measure, Learn
+date: 2022-07-01
 ---
 
 ### Introduction
