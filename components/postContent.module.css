@@ -29,7 +29,6 @@
 }
 
 #postContent strong {
-    font-size: 1rem;
     font-family: 'bold', sans-serif;
 }
 
@@ -42,7 +41,7 @@
     font-family: bold;
     font-size: 1.5rem;
     word-break: keep-all;
-    margin-bottom: 1rem;
+    margin-bottom: 0; /* h2 아래에 반드시 h3가 있다는 가정 */
 }
 
 #postContent h2:not(:first-child) {
