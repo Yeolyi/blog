@@ -30,7 +30,6 @@ export default function TilList({ allPostsData }) {
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData("til");
-    console.log(allPostsData);
     return {
         props: {
             allPostsData
