@@ -15,9 +15,9 @@
 }
 
 #postContent p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: 'regular', sans-serif;
-    line-height: 1.8;
+    line-height: 1.5;
     white-space: pre-wrap;
 }
 
