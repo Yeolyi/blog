@@ -2,6 +2,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    font-size: 15px;
 }
 
 #postContent::before {
@@ -15,9 +16,8 @@
 }
 
 #postContent p {
-    font-size: 0.9rem;
     font-family: 'regular', sans-serif;
-    line-height: 1.5;
+    line-height: 1.75;
     white-space: pre-wrap;
 }
 
@@ -46,13 +46,6 @@
     font-size: 1.6rem;
     word-break: keep-all;
     margin-bottom: 0; 
-}
-
-#postContent h2::after {
-    content: '';
-    width: 100%;
-    height: 1px;
-    color: lightgray;
 }
 
 #postContent h2+* {
