@@ -2,7 +2,6 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    font-size: 15px;
 }
 
 #postContent::before {
@@ -13,6 +12,7 @@
 
 #postContent * {
     margin-bottom: 16px;
+    font-size: 15px;
 }
 
 #postContent p {

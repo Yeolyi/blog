@@ -137,4 +137,55 @@ ASI(Automatic semicolon insertion)으로 인해 사실 세미콜론을 붙이지
 
 ## 6. 데이터 타입
 
+**원시 타입**(primitive type): number, string, boolean, undefined, null, Symbol
+
+**객체 타입**(object/reference type): 객체, 함수, 배열
+
 !@bigInt.js@!
+
+### 1. 숫자 타입
+
+!@number.js@!
+ 
+### 2. 문자열 타입
+
+> 0개 이상의 16비트 유니코드 문자(UTF-16)의 집합
+
+일반적으로 작음따옴표를 사용. 
+
+배열인 C와 객체인 Java와 다르게 JS에서 문자열은 원시 타입이며 immutable하다. 
+
+### 3. 템플릿 리터럴
+
+ES6부터 추가된 새로운 문자열 표기법. 백틱(`)을 사용하며 multiline string, expression interpolation, tagged template등의 기능을 제공한다. [참고](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals)
+
+!@escapeSequence.js@!
+
+\n은 LF(Line Feed), \r은 CR(Carriage Return). 과거 타자기에서 전자는 종이를 한 줄 올리고 후자는 커서를 맨 앞줄로 이동시켰다. 요즘은 기능은 같지만 전자를 사용한다. 
+
+!@templateLiteral.js@!
+
+> + 연산자는 피연산자 중 하나 이상이 문자열인 경우 문자열 연결 연산자로 동작한다. 
+
+### 5. undefined 타입
+
+undefined 타입의 값은 undefined가 유일하다. 
+
+> 자바스크립트 엔진이 변수를 초기화하는데 사용하는 undefined를 개발자가 의도적으로 변수에 할당한다면 undefined의 본래 취지와 어긋날뿐더러 혼란을 줄 수 있으므로 권장하지 않는다. ... 대신에 null을 사용
+
+> 자바스크립트에서는 변수를 선언하면 암묵적으로 정의가 이뤄지기 때문에 선언과 정의의 구분이 모호하다. ... ECMAScript 사양을 따라 변수는 선언하고 함수는 정의한다고 표현하자. 
+
+### 6. null 타입
+
+null타입의 값은 null이 유일하다. 변수 값의 의도적 부재(intentional absence)를 명시할 때 사용한다. 함수가 유효한 값을 반환할 수 없는 경우 명시적으로 null을 반환하기도 한다. 
+
+### 9. 데이터 타입의 필요성
+
+> 컴파일러 또는 인터프리터는 **심벌 테이블**이라고 부르는 자료 구조를 통해 식별자를 키로 바인딩된 값의 메모리 주소, 데이터 타입, 스코프 등을 관리한다. 
+
+> 자바스크립트에서의 변수는 선언이 아닌 할당에 의해 타입이 결정(type inference)된다. 그리고 재할당에 의해 변수의 타입은 바뀔 수 있다(dynamic typing). 
+
+## 7. 연산자
+
+> 피연산자가 '값'이라는 명사의 역할을 한다면 연산자는 '피연산자를 연산하여 새로운 값을 만들다'라는 동사의 역할을 한다고 볼 수 있다. 
+
