@@ -10,6 +10,10 @@
     margin-bottom: 20px;
 }
 
+#postContent * {
+    margin-bottom: 16px;
+}
+
 #postContent p {
     font-size: 1rem;
     font-family: 'regular', sans-serif;
@@ -39,9 +43,20 @@
 
 #postContent h2 {
     font-family: bold;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     word-break: keep-all;
-    margin-bottom: 0; /* h2 아래에 반드시 h3가 있다는 가정 */
+    margin-bottom: 0; 
+}
+
+#postContent h2::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    color: lightgray;
+}
+
+#postContent h2+* {
+    margin-top: 1.5rem;
 }
 
 #postContent h2:not(:first-child) {
@@ -82,10 +97,6 @@
 #postContent blockquote p {
     padding: 8px 16px;
     margin-bottom: 0;
-}
-
-#postContent * {
-    margin-bottom: 16px;
 }
 
 #postContent hr {
