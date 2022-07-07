@@ -165,7 +165,7 @@ ES6부터 추가된 새로운 문자열 표기법. 백틱(`)을 사용하며 mul
 
 !@templateLiteral.js@!
 
-> + 연산자는 피연산자 중 하나 이상이 문자열인 경우 문자열 연결 연산자로 동작한다. 
+> \+ 연산자는 피연산자 중 하나 이상이 문자열인 경우 문자열 연결 연산자로 동작한다. 
 
 ### 5. undefined 타입
 
@@ -188,4 +188,25 @@ null타입의 값은 null이 유일하다. 변수 값의 의도적 부재(intent
 ## 7. 연산자
 
 > 피연산자가 '값'이라는 명사의 역할을 한다면 연산자는 '피연산자를 연산하여 새로운 값을 만들다'라는 동사의 역할을 한다고 볼 수 있다. 
+
+### 1. 산술 연산자
+
+**implicit coersion, type coercion**
+
+!@unaryPlus.js@!
+
+!@binaryPlus.js@!
+
+### 2. 할당 연산자
+
+!@assignmentOperator.js@!
+
+### 3. 비교 연산자
+
+**동등 비교**(loose equality) 연산자는 암묵적 타입 변환을 통해 타입을 일치시킨 후 비교한다. 
+
+!@looseEquality.js@!
+
+**일치 비교**(strict equality) 연산자는 
+
 
