@@ -251,3 +251,16 @@ for문은 반복 횟수가 명확할 때 사용하고, while문은 불명확할 
 
 ## 9. 타입 변환과 단축 평가
 
+명시적 타입 변환(explicit coercion) / 타입 캐스팅(type casting)
+
+암묵적 타입 변환(implicit coercion) / 타입 강제 변환(type coercion)
+
+위 두 타입 변환이 기존 원시 값을 변경하는 것은 아니다. 원시 값은 변경 불가능한 값(immutable value)이므로 변경할 수 없다. 
+
+### 2. 암묵적 타입 변환
+
+!@implicitCoercion.js@!
+
+### 3. 명시적 타입 변환
+
+!@explicitCoercion.js@!
