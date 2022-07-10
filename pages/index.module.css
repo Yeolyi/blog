@@ -65,6 +65,7 @@
 #categoryList h2 {
     font-family: bold;
     font-size: 2rem;
+    margin-bottom: 4px;
 }
 
 #categoryList h3 {
