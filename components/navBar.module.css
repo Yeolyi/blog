@@ -37,7 +37,7 @@
     white-space: pre; /* []가 추가될 때 버튼 이동을 막는 공백을 제거하지 않음 */
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     #navBar {
         display: flex;
         flex-direction: column;
@@ -47,4 +47,4 @@
     #categoryList {
         margin: 0;
     }
-}
+} */
