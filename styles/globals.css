@@ -33,6 +33,12 @@
   src: url(../fonts/FiraCode-VF.woff2);
 }
 
+@font-face {
+    font-family: 'code';
+    src: url(../fonts/D2Coding-Ver1.3.2-20180524.ttf);
+    unicode-range: U+AC00-D7A3;
+}
+
 * {
   font-family: 'regular', sans-serif;
   padding: 0; /* 없으면 이상한 padding margin이 붙음 */

@@ -13,9 +13,9 @@ export default function NavBar() {
 
 export const categories = [
     { name: "기록", link: "/til", description: "매일의 공부를 간단히 기록합니다." },
-    { name: "보관", link: "/archive", description: "두고두고 볼만한 정보를 요약해 보관합니다." },
-    { name: "경험", link: "/writing", description: "저만의 경험을 기록합니다." },
-    { name: "사전", link: "/dict", description: "공부한 모든 것들을 모읍니다." },
+    { name: "보관", link: "/archive", description: "좋은 정보를 요약해 보관합니다." },
+    { name: "경험", link: "/writing", description: "제 경험을 기록합니다." },
+    { name: "사전", link: "/dict", description: "공부한 것들을 모읍니다." },
 ];
 
 function CategoryList() {
