@@ -31,8 +31,8 @@
     padding-top: 20px;
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     #archiveHeader {
         top: 112px;
     }
-}
+} */

@@ -98,6 +98,7 @@
 }
 
 #postContent code * {
+    font-size: 0.8rem;
     font-family: 'code';
     color: #D4D5C1;
     word-break: break-word;

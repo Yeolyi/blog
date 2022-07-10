@@ -36,8 +36,8 @@
     padding-top: 20px;
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     #postHeader {
         top: 112px;
     }
-}
+} */
