@@ -2,6 +2,9 @@
 title: 모던 자바스크립트 Deep Dive
 ---
 
+[yes24](http://www.yes24.com/Product/Goods/92742567)
+[교보](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9791158392239)
+
 ## 1. 프로그래밍
 
 ### 3. 구문과 의미
@@ -543,7 +546,54 @@ internal slot/method
 
 ### 4. 프로퍼티 정의
 
+!@defineProperty.js@!
 
+### 5. 객체 변경 방지
 
+프로퍼티 추가, 삭제, 읽기, 쓰기, 어트리뷰트 재정의 중
+Object.preventExtensions는 추가 외 허용, 
+.seal은 읽기 쓰기 외 비허용, 
+.freeze는 읽기만 허용한다. 
+
+이들은 얕은 변경 방지(shallow only)로 직속 프로퍼티만 변경이 방지된다. 
+
+## 17. 생성자 함수에 의한 객체 생성
+
+### 1. Object 생성자 함수
+
+> 생성자 함수(constructor)란 new 연산자와 함께 호출하여 객체(인스턴스)를 생성하는 함수를 말한다.
+
+> 생성자 함수에 의해 생성된 객체를 인스턴스(instance)라고 한다. 
+
+!@constructor.js@!
+
+### 2. 생성자 함수
+
+생성자 함수를 사용하면 객체 리터럴을 사용한 방법과 달리 프로퍼티 구조가 동일한 객체 여러 개를 간편하게 생성할 수 있다. 
+
+!@constructorGood.js@!
+
+new 연산자와 함께 호출하면 해당 함수는 생성자 함수로 동작한다. 
+
+!@constructorWithoutNew.js@!
+
+인스턴스 생성, this에 이를 바인딩 -> 생성자 함수 내의 코드로 인스턴스 초기화 -> this 암묵적 반환
+
+함수는 객체이지만 일반 객체와 다르게 호출할 수 있다. 
+
+함수가 일반 함수로 호출되면 함수 객체의 내부 메서드 [[Call]]이 호출되고, 생성자 함수로 호출되면 [[Construct]]가 호출된다. 
+
+- constructor: 함수 선언문/표현식, 클래스
+- non-constructor: ES6 메서드 축약 표현, 화살표 함수
+
+!@es6Method.js@!
+
+생성자 함수는 파스칼 케이스로 명명하여 일반 함수와 구별할 수 있도록 노력한다. 그럼에도 실수의 위험성을 회피하기 위해 ES6에서는 new.target을 지원한다. 
+
+!@newTarget.js@!
+
+대부분의 빌트인 생성자 함수는 new 연산자 유무에 상관없이 적절한 값을 반환하지만, String, Number, Boolean은 new가 있으면 객체, 없으면 값을 반환한다. 
+
+## 18. 함수와 일급 객체
 
 
